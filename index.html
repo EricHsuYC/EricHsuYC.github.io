@@ -2,21 +2,24 @@
 <html>
 <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
-  <body style='margin : 0px; overflow: hidden;'>
-    <!-- <a-scene embedded arjs='sourceType: webcam;'> -->
-    <a-scene embedded arjs>
-      <a-box position='0 0.5 0' material='color: black;'></a-box>
-      <a-marker-camera preset='custom' type='pattern' url='marker/pattern-marker.patt'>
 
-  	<!-- <a-marker preset="hiro"> -->
+<body style='margin : 0px; overflow: hidden;'>
+  <!-- <a-scene embedded arjs='sourceType: webcam;'> -->
+  <a-scene embedded arjs>
+    <!-- <a-marker-camera preset='custom' type='pattern' url='marker/pattern-marker.patt'> -->
+    <a-marker preset='custom' type='pattern' url='marker/pattern-marker.patt'>
+      <a-box position='0 0.5 0' material='color: white;'></a-box>
 
-            <!-- <a-entity 
+      <!-- <a-marker preset="hiro"> -->
+
+      <!-- <a-entity 
               obj-model=”obj: url(/model/model.obj); 
               mtl: url(/model/materials.mtl)”>
             </a-entity> -->
-            <!-- <a-text value="AECOM IML"></a-text> -->
-      </a-marker-camera>
-  	  <!-- <a-entity camera></a-entity> -->
-    </a-scene>
-  </body>
+      <!-- <a-text value="AECOM IML"></a-text> -->
+    </a-marker>
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+
 </html>
