@@ -3,14 +3,15 @@
 <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
   <body style='margin : 0px; overflow: hidden;'>
-    <a-scene embedded arjs='sourceType: webcam;'>
-    <!-- <a-scene embedded arjs> -->
+    <!-- <a-scene embedded arjs='sourceType: webcam;'> -->
+    <a-scene embedded arjs>
   	<a-marker preset="hiro">
             <!-- <a-box position='0 0.5 0' material='color: black;'></a-box> -->
-            <a-entity 
+            <!-- <a-entity 
               obj-model=”obj: url(/model/model.obj); 
               mtl: url(/model/materials.mtl)”>
-            </a-entity>
+            </a-entity> -->
+            <a-text value="AECOM IML"></a-text>
   	</a-marker>
   	<a-entity camera></a-entity>
     </a-scene>
