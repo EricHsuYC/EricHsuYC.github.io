@@ -1,2087 +1,277 @@
-# Rhino
-newmtl TH_048CP
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd TH_048CP.png
-map_D TH_048CP.png
-newmtl diffuse_0
-Ka 0.0000 0.0000 0.0000
-Kd 0.9804 0.9804 0.9804
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl TH_043CP
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd TH_043CP.png
-map_D TH_043CP.png
-newmtl Material_1
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_2
-Ka 0.0000 0.0000 0.0000
-Kd 0.6078 0.6078 0.6078
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Groundcover_RiverRock_4inch.jpg
-newmtl Material_3
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Brick_Antique.jpg
-newmtl Material_4
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl Material_5
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Concrete_Block_Retaining_Gray.jpg
-newmtl Material_6
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Concrete_Block_Retaining_Gray.jpg
-newmtl Material_7
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Concrete_Block_8x8_Gray.jpg
-newmtl Material_8
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl Material_9
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Brick_Antique.jpg
-newmtl Material_10
-Ka 0.0000 0.0000 0.0000
-Kd 0.4392 0.4392 0.4392
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 0.3000
-Ns 0.0000
-map_Kd Metal_Corrogated_Shiny.jpg
-newmtl Material_11
-Ka 0.0000 0.0000 0.0000
-Kd 0.7294 0.7490 0.7490
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Cinder Block.jpg
-newmtl Material_12
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_13
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Brick_Antique.jpg
-newmtl Material_14
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Concrete_Block_8x8_Gray.jpg
-newmtl Material_15
-Ka 0.0000 0.0000 0.0000
-Kd 0.9686 0.9686 0.9686
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete Old.jpg
-newmtl Material_16
-Ka 0.0000 0.0000 0.0000
-Kd 0.7294 0.7490 0.7490
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Cinder Block.jpg
-newmtl Material_17
-Ka 0.0000 0.0000 0.0000
-Kd 0.7294 0.7490 0.7490
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Cinder Block.jpg
-newmtl Material_18
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Brick_Antique.jpg
-newmtl Material_19
-Ka 0.0000 0.0000 0.0000
-Kd 0.4392 0.4392 0.4392
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 0.3000
-Ns 0.0000
-map_Kd Metal_Corrogated_Shiny.jpg
-newmtl Material_20
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Brick_Antique.jpg
-newmtl Material_21
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Brick_Antique.jpg
-newmtl Material_22
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Brick_Antique.jpg
-newmtl Material_23
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_24
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Groundcover_Sand_Raked.jpg
-newmtl Material_25
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl Material_26
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass11.jpg
-newmtl Material_27
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Concrete_Block_8x8_Gray.jpg
-newmtl Material_28
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Concrete_Block_8x8_Gray.jpg
-newmtl Material_29
-Ka 0.0000 0.0000 0.0000
-Kd 0.7294 0.7490 0.7490
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Cinder Block.jpg
-newmtl Material_30
-Ka 0.0000 0.0000 0.0000
-Kd 0.8863 0.8863 0.8863
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl Material_31
-Ka 0.0000 0.0000 0.0000
-Kd 0.8863 0.8863 0.8863
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl Material_32
-Ka 0.0000 0.0000 0.0000
-Kd 0.8863 0.8863 0.8863
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl Material_33
-Ka 0.0000 0.0000 0.0000
-Kd 0.8863 0.8863 0.8863
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl Stacy_Skin
-Ka 0.0000 0.0000 0.0000
-Kd 0.8235 0.7059 0.5490
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl Stacy_Shoe
-Ka 0.0000 0.0000 0.0000
-Kd 0.9020 0.1686 0.1725
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl Stacy_Shirt
-Ka 0.0000 0.0000 0.0000
-Kd 0.4000 0.4000 0.4000
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl Stacy_Hair
-Ka 0.0000 0.0000 0.0000
-Kd 0.1412 0.0745 0.0275
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl Stacy_Pants
-Ka 0.0000 0.0000 0.0000
-Kd 0.1569 0.2275 0.3686
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl Material_34
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_35
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_36
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_37
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_38
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_39
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_40
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_41
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_42
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_43
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_44
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_45
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_46
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_47
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_48
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_49
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_50
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_51
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_52
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_53
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_54
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_55
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_56
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_57
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_58
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_59
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_60
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_61
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_62
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_63
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_64
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_65
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_66
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_67
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_68
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_69
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_70
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_71
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_72
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_73
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_74
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_75
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_76
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_77
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_78
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_79
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_80
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_81
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_82
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_83
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_84
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_85
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_86
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_87
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_88
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_89
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_90
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_91
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_92
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_93
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_94
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_95
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_96
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_97
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_98
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_99
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_100
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_101
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_102
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_103
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_104
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_105
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_106
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_107
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_108
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_109
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_110
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_111
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_112
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_113
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_114
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_115
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_116
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_117
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_118
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_119
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_120
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_121
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_122
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_123
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_124
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_125
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_126
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_127
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Concrete_Block_Retaining_Gray.jpg
-newmtl Material_128
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_129
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_130
-Ka 0.0000 0.0000 0.0000
-Kd 0.4392 0.4392 0.4392
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 0.3000
-Ns 0.0000
-map_Kd Metal_Corrogated_Shiny.jpg
-newmtl Material_131
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Roofing_Shingles_GAF_Estates.jpg
-newmtl Material_132
-Ka 0.0000 0.0000 0.0000
-Kd 0.3373 0.2667 0.2000
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Wood_Floor.jpg
-newmtl Material_133
-Ka 0.0000 0.0000 0.0000
-Kd 0.4275 0.4275 0.4275
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Fencing_Lattice_Natural.png
-map_D Fencing_Lattice_Natural.png
-newmtl Material_134
-Ka 0.0000 0.0000 0.0000
-Kd 0.3373 0.2667 0.2000
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Wood_Floor.jpg
-newmtl Material_135
-Ka 0.0000 0.0000 0.0000
-Kd 0.3373 0.2667 0.2000
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Wood_Floor.jpg
-newmtl Material_136
-Ka 0.0000 0.0000 0.0000
-Kd 0.7294 0.7490 0.7490
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Cinder Block.jpg
-newmtl Material_137
-Ka 0.0000 0.0000 0.0000
-Kd 0.7294 0.7490 0.7490
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Cinder Block.jpg
-newmtl Material_138
-Ka 0.0000 0.0000 0.0000
-Kd 0.9686 0.9686 0.9686
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete Old.jpg
-newmtl Material_139
-Ka 0.0000 0.0000 0.0000
-Kd 0.4392 0.4392 0.4392
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 0.3000
-Ns 0.0000
-map_Kd Metal_Corrogated_Shiny.jpg
-newmtl Material_140
-Ka 0.0000 0.0000 0.0000
-Kd 0.3373 0.2667 0.2000
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Wood_Floor.jpg
-newmtl Material_141
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_142
-Ka 0.0000 0.0000 0.0000
-Kd 0.3373 0.2667 0.2000
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Wood_Floor.jpg
-newmtl Material_143
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_144
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Roofing_Shingles_GAF_Estates.jpg
-newmtl Material_145
-Ka 0.0000 0.0000 0.0000
-Kd 0.3373 0.2667 0.2000
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Wood_Floor.jpg
-newmtl Material_146
-Ka 0.0000 0.0000 0.0000
-Kd 0.5569 0.5569 0.5569
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl Material_147
-Ka 0.0000 0.0000 0.0000
-Kd 0.5569 0.5569 0.5569
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl Material_148
-Ka 0.0000 0.0000 0.0000
-Kd 0.9686 0.9686 0.9686
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete Old.jpg
-newmtl Material_149
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_150
-Ka 0.0000 0.0000 0.0000
-Kd 0.4392 0.4392 0.4392
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 0.3000
-Ns 0.0000
-map_Kd Metal_Corrogated_Shiny.jpg
-newmtl Material_151
-Ka 0.0000 0.0000 0.0000
-Kd 0.8078 0.8078 0.8078
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Metal_Corrogated_Shiny1.jpg
-newmtl Material_152
-Ka 0.0000 0.0000 0.0000
-Kd 0.3373 0.2667 0.2000
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Wood_Floor.jpg
-newmtl Material_153
-Ka 0.0000 0.0000 0.0000
-Kd 0.9686 0.9686 0.9686
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete Old.jpg
-newmtl Material_154
-Ka 0.0000 0.0000 0.0000
-Kd 0.5569 0.5569 0.5569
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl Material_155
-Ka 0.0000 0.0000 0.0000
-Kd 0.7294 0.7490 0.7490
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Cinder Block.jpg
-newmtl Material_156
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_157
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Brick_Antique.jpg
-newmtl Material_158
-Ka 0.0000 0.0000 0.0000
-Kd 0.9686 0.9686 0.9686
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete Old.jpg
-newmtl Material_159
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Brick_Antique.jpg
-newmtl Material_160
-Ka 0.0000 0.0000 0.0000
-Kd 0.4392 0.4392 0.4392
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 0.3000
-Ns 0.0000
-map_Kd Metal_Corrogated_Shiny.jpg
-newmtl Material_161
-Ka 0.0000 0.0000 0.0000
-Kd 0.3882 0.2941 0.1961
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl Material_162
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_163
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_164
-Ka 0.0000 0.0000 0.0000
-Kd 0.9686 0.9686 0.9686
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete Old.jpg
-newmtl Material_165
-Ka 0.0000 0.0000 0.0000
-Kd 0.9686 0.9686 0.9686
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete Old.jpg
-newmtl Material_166
-Ka 0.0000 0.0000 0.0000
-Kd 0.9686 0.9686 0.9686
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete Old.jpg
-newmtl Material_167
-Ka 0.0000 0.0000 0.0000
-Kd 0.3882 0.2941 0.1961
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl Material_168
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Wood_Floor1.jpg
-newmtl Material_169
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Brick_Antique.jpg
-newmtl Material_170
-Ka 0.0000 0.0000 0.0000
-Kd 0.4392 0.4392 0.4392
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 0.3000
-Ns 0.0000
-map_Kd Metal_Corrogated_Shiny.jpg
-newmtl Material_171
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_172
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_173
-Ka 0.0000 0.0000 0.0000
-Kd 0.4392 0.4392 0.4392
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 0.3000
-Ns 0.0000
-map_Kd Metal_Corrogated_Shiny.jpg
-newmtl Material_174
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_175
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_176
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_177
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_178
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_179
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_180
-Ka 0.0000 0.0000 0.0000
-Kd 0.4275 0.4275 0.4275
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Fencing_Lattice_Natural.png
-map_D Fencing_Lattice_Natural.png
-newmtl Material_181
-Ka 0.0000 0.0000 0.0000
-Kd 0.3373 0.2667 0.2000
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Wood_Floor.jpg
-newmtl Material_182
-Ka 0.0000 0.0000 0.0000
-Kd 0.3373 0.2667 0.2000
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Wood_Floor.jpg
-newmtl Material_183
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_184
-Ka 0.0000 0.0000 0.0000
-Kd 0.3373 0.2667 0.2000
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Wood_Floor.jpg
-newmtl Material_185
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_186
-Ka 0.0000 0.0000 0.0000
-Kd 0.3373 0.2667 0.2000
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Wood_Floor.jpg
-newmtl Material_187
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Roofing_Shingles_GAF_Estates.jpg
-newmtl Material_188
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_189
-Ka 0.0000 0.0000 0.0000
-Kd 0.4275 0.4275 0.4275
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Fencing_Lattice_Natural.png
-map_D Fencing_Lattice_Natural.png
-newmtl Material_190
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl Material_191
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_192
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Brick_Antique.jpg
-newmtl Material_193
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Brick_Antique.jpg
-newmtl Material_194
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Brick_Antique.jpg
-newmtl Material_195
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Brick_Antique.jpg
-newmtl Material_196
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Brick_Antique.jpg
-newmtl Material_197
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Brick_Antique.jpg
-newmtl Material_198
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Brick_Pavers_Modular.jpg
-newmtl Material_199
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_200
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Blinds_Roman_Hobbled_Blue.jpg
-newmtl Material_201
-Ka 0.0000 0.0000 0.0000
-Kd 0.3176 0.3176 0.3176
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 0.3400
-Ns 0.0000
-map_Kd Translucent_Glass_Saftey.jpg
-newmtl Material_202
-Ka 0.0000 0.0000 0.0000
-Kd 0.3373 0.2667 0.2000
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Wood_Floor.jpg
-newmtl Material_203
-Ka 0.0000 0.0000 0.0000
-Kd 0.3373 0.2667 0.2000
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Wood_Floor.jpg
-newmtl Material_204
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Roofing_Shingles_GAF_Estates.jpg
-newmtl Material_205
-Ka 0.0000 0.0000 0.0000
-Kd 0.3882 0.2941 0.1961
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl Material_206
-Ka 0.0000 0.0000 0.0000
-Kd 0.3176 0.3176 0.3176
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 0.3400
-Ns 0.0000
-map_Kd Translucent_Glass_Saftey.jpg
-newmtl Material_207
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Brick_Antique.jpg
-newmtl Material_208
-Ka 0.0000 0.0000 0.0000
-Kd 0.3882 0.2941 0.1961
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl Material_209
-Ka 0.0000 0.0000 0.0000
-Kd 0.8863 0.8863 0.8863
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl Material_210
-Ka 0.0000 0.0000 0.0000
-Kd 0.3882 0.2941 0.1961
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl Material_211
-Ka 0.0000 0.0000 0.0000
-Kd 0.3882 0.2941 0.1961
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl Material_212
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_213
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_214
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_215
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_216
-Ka 0.0000 0.0000 0.0000
-Kd 0.8863 0.8863 0.8863
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl Material_217
-Ka 0.0000 0.0000 0.0000
-Kd 0.3176 0.3176 0.3176
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 0.3400
-Ns 0.0000
-map_Kd Translucent_Glass_Saftey.jpg
-newmtl Material_218
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_219
-Ka 0.0000 0.0000 0.0000
-Kd 0.3373 0.2667 0.2000
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Wood_Floor.jpg
-newmtl Material_220
-Ka 0.0000 0.0000 0.0000
-Kd 0.3373 0.2667 0.2000
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Wood_Floor.jpg
-newmtl Material_221
-Ka 0.0000 0.0000 0.0000
-Kd 0.3373 0.2667 0.2000
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Wood_Floor.jpg
-newmtl Material_222
-Ka 0.0000 0.0000 0.0000
-Kd 0.3373 0.2667 0.2000
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Wood_Floor.jpg
-newmtl Material_223
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Roofing_Shingles_GAF_Estates.jpg
-newmtl Material_224
-Ka 0.0000 0.0000 0.0000
-Kd 0.6078 0.6078 0.6078
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Groundcover_RiverRock_4inch.jpg
-newmtl Material_225
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_226
-Ka 0.0000 0.0000 0.0000
-Kd 0.6078 0.6078 0.6078
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Groundcover_RiverRock_4inch.jpg
-newmtl Material_227
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Concrete_Block_Retaining_Gray.jpg
-newmtl Material_228
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_229
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_230
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_231
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_232
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_233
-Ka 0.0000 0.0000 0.0000
-Kd 0.6627 0.6627 0.6745
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Polished Concrete New.jpg
-newmtl Material_234
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Metal_Aluminum_Anodized.jpg
-newmtl Asphalt_Rubber_Blue
-Ka 0.0000 0.0000 0.0000
-Kd 0.2157 0.2157 0.6078
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl Asphalt_Rubber_Red
-Ka 0.0000 0.0000 0.0000
-Kd 0.6078 0.2157 0.2157
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl Asphalt_Rubber_Black
-Ka 0.0000 0.0000 0.0000
-Kd 0.2157 0.2157 0.2157
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl Asphalt_Rubber_Yellow
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl Asphalt_Rubber_Green
-Ka 0.0000 0.0000 0.0000
-Kd 0.2157 0.6863 0.2157
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Asphalt_Rubber_Blue1.jpg
-newmtl Asphalt_Rubber_White
-Ka 0.0000 0.0000 0.0000
-Kd 0.7843 0.7843 0.7843
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Asphalt_Rubber_White.jpg
-newmtl Material_235
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl Material_236
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Metal_Aluminum_Anodized.jpg
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl Concrete_Block_8x8_Gray
+Ka 0.000000 0.000000 0.000000
+Kd 0.882353 0.886275 0.866667
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/Concrete_Block_8x8_Gray.jpg
+
+newmtl Concrete_Aggregate_Smoke
+Ka 0.000000 0.000000 0.000000
+Kd 0.458824 0.447059 0.439216
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/Concrete_Aggregate_Smoke.jpg
+
+newmtl FrontColor
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.330000 0.330000 0.330000
+
+newmtl BackColor
+Ka 0.000000 0.000000 0.000000
+Kd 0.643137 0.698039 0.733333
+Ks 0.330000 0.330000 0.330000
+
+newmtl _1
+Ka 0.000000 0.000000 0.000000
+Kd 0.564706 0.807843 0.917647
+Ks 0.330000 0.330000 0.330000
+d 0.720000
+
+newmtl Vegetation_Grass
+Ka 0.000000 0.000000 0.000000
+Kd 0.572549 0.639216 0.360784
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/Vegetation_Grass.jpg
+
+newmtl Metal_Aluminum_Anodized
+Ka 0.000000 0.000000 0.000000
+Kd 0.792157 0.819608 0.858824
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/Metal_Aluminum_Anodized.jpg
+
 newmtl Concrete_Brushed
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Concrete_Brushed.jpg
-newmtl Material_237
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Metal_Aluminum_Anodized.jpg
-newmtl Material_238
-Ka 0.0000 0.0000 0.0000
-Kd 1.0000 1.0000 0.0000
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-newmtl Material_239
-Ka 0.0000 0.0000 0.0000
-Kd 0.5725 0.6392 0.3608
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Vegetation_Grass1.jpg
-newmtl 水1
-Ka 0.0000 0.0000 0.0000
-Kd 0.5647 0.8078 0.9176
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 0.7200
-Ns 0.0000
-newmtl Material_240
-Ka 0.0000 0.0000 0.0000
-Kd 0.4588 0.4471 0.4392
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Concrete_Aggregate_Smoke.jpg
-newmtl Material_241
-Ka 0.0000 0.0000 0.0000
-Kd 0.4588 0.4471 0.4392
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Concrete_Aggregate_Smoke.jpg
-newmtl Material_242
-Ka 0.0000 0.0000 0.0000
-Kd 0.4588 0.4471 0.4392
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Concrete_Aggregate_Smoke.jpg
-newmtl Material_243
-Ka 0.0000 0.0000 0.0000
-Kd 0.4588 0.4471 0.4392
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Concrete_Aggregate_Smoke.jpg
-newmtl Material_244
-Ka 0.0000 0.0000 0.0000
-Kd 0.4588 0.4471 0.4392
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Concrete_Aggregate_Smoke.jpg
-newmtl Material_245
-Ka 0.0000 0.0000 0.0000
-Kd 0.8824 0.8863 0.8667
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Concrete_Block_8x8_Gray1.jpg
-newmtl Material_246
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Concrete_Block_Retaining_Gray.jpg
-newmtl Material_247
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Concrete_Block_Retaining_Gray.jpg
-newmtl Material_248
-Ka 0.0000 0.0000 0.0000
-Kd 0.4941 0.4941 0.4941
-Ks 1.0000 1.0000 1.0000
-Tf 0.0000 0.0000 0.0000
-d 1.0000
-Ns 0.0000
-map_Kd Concrete_Block_Retaining_Gray.jpg
+Ka 0.000000 0.000000 0.000000
+Kd 0.752941 0.752941 0.752941
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/Concrete_Brushed.jpg
+
+newmtl M_0056_Yellow
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 0.000000
+Ks 0.330000 0.330000 0.330000
+
+newmtl Vegetation_Grass_Green
+Ka 0.000000 0.000000 0.000000
+Kd 0.400000 0.619608 0.298039
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/Vegetation_Grass_Green.jpg
+
+newmtl Asphalt_Rubber_Blue
+Ka 0.000000 0.000000 0.000000
+Kd 0.215686 0.215686 0.607843
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/Asphalt_Rubber_Blue.jpg
+
+newmtl Asphalt_Rubber_Red_
+Ka 0.000000 0.000000 0.000000
+Kd 0.607843 0.215686 0.215686
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/Asphalt_Rubber_Red_.jpg
+
+newmtl Asphalt_Rubber_Black
+Ka 0.000000 0.000000 0.000000
+Kd 0.215686 0.215686 0.215686
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/Asphalt_Rubber_Black.jpg
+
+newmtl Asphalt_Rubber_Yellow
+Ka 0.000000 0.000000 0.000000
+Kd 0.701961 0.627451 0.227451
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/Asphalt_Rubber_Yellow.jpg
+
+newmtl Asphalt_Rubber_Green
+Ka 0.000000 0.000000 0.000000
+Kd 0.215686 0.686275 0.215686
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/Asphalt_Rubber_Green.jpg
+
+newmtl Asphalt_Rubber_White
+Ka 0.000000 0.000000 0.000000
+Kd 0.784314 0.784314 0.784314
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/Asphalt_Rubber_White.jpg
+
+newmtl Polished_Concrete_New
+Ka 0.000000 0.000000 0.000000
+Kd 0.662745 0.662745 0.674510
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/Polished_Concrete_New.jpg
+
+newmtl Groundcover_River_Rock_4_inch
+Ka 0.000000 0.000000 0.000000
+Kd 0.607843 0.607843 0.607843
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/Groundcover_River_Rock_4_inch.jpg
+
+newmtl Concrete_Block_Retaining_Gray
+Ka 0.000000 0.000000 0.000000
+Kd 0.474510 0.474510 0.474510
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/Concrete_Block_Retaining_Gray.jpg
+
+newmtl Roofing_Shingles_GAF_Estates
+Ka 0.000000 0.000000 0.000000
+Kd 0.317647 0.301961 0.290196
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/Roofing_Shingles_GAF_Estates.jpg
+
+newmtl Wood_Floor
+Ka 0.000000 0.000000 0.000000
+Kd 0.337255 0.266667 0.200000
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/Wood_Floor.jpg
+
+newmtl Translucent_Glass_Safety
+Ka 0.000000 0.000000 0.000000
+Kd 0.317647 0.317647 0.317647
+Ks 0.330000 0.330000 0.330000
+d 0.340000
+map_Kd th2/Translucent_Glass_Safety.jpg
+
+newmtl Color_M01
+Ka 0.000000 0.000000 0.000000
+Kd 0.886275 0.886275 0.886275
+Ks 0.330000 0.330000 0.330000
+
+newmtl Color_C08
+Ka 0.000000 0.000000 0.000000
+Kd 0.388235 0.294118 0.196078
+Ks 0.330000 0.330000 0.330000
+
+newmtl _Brick_Antique_01_1
+Ka 0.000000 0.000000 0.000000
+Kd 0.576471 0.411765 0.278431
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/_Brick_Antique_01_1.jpg
+
+newmtl Blinds_Roman_Hobbled_Blue
+Ka 0.000000 0.000000 0.000000
+Kd 0.317647 0.321569 0.341176
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/Blinds_Roman_Hobbled_Blue.jpg
+
+newmtl Pavers_Modular_Brick
+Ka 0.000000 0.000000 0.000000
+Kd 0.686275 0.560784 0.505882
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/Pavers_Modular_Brick.jpg
+
+newmtl Wood_Floor_Light
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.690196 0.498039
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/Wood_Floor_Light.jpg
+
+newmtl Fencing_Lattice_Natural
+Ka 0.000000 0.000000 0.000000
+Kd 0.427451 0.427451 0.427451
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/Fencing_Lattice_Natural.png
+
+newmtl _Wood_Floor_1
+Ka 0.000000 0.000000 0.000000
+Kd 0.607843 0.411765 0.239216
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/_Wood_Floor_1.jpg
+
+newmtl _Metal_Corrugated_Shiny_1
+Ka 0.000000 0.000000 0.000000
+Kd 0.439216 0.439216 0.439216
+Ks 0.330000 0.330000 0.330000
+d 0.300000
+map_Kd th2/_Metal_Corrugated_Shiny_1.jpg
+
+newmtl Polished_Concrete_Old
+Ka 0.000000 0.000000 0.000000
+Kd 0.968627 0.968627 0.968627
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/Polished_Concrete_Old.jpg
+
+newmtl _Cinder_Block_1
+Ka 0.000000 0.000000 0.000000
+Kd 0.729412 0.749020 0.749020
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/_Cinder_Block_1.jpg
+
+newmtl Color_M04
+Ka 0.000000 0.000000 0.000000
+Kd 0.556863 0.556863 0.556863
+Ks 0.330000 0.330000 0.330000
+
+newmtl Metal_Corrugated_Shiny
+Ka 0.000000 0.000000 0.000000
+Kd 0.807843 0.807843 0.807843
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/Metal_Corrugated_Shiny.jpg
+
+newmtl TH_048CP
+Ka 0.000000 0.000000 0.000000
+Kd 0.517647 0.525490 0.462745
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/TH_048CP.png
+
+newmtl TH_043CP
+Ka 0.000000 0.000000 0.000000
+Kd 0.392157 0.462745 0.243137
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/TH_043CP.png
+
+newmtl Stacy_Skin
+Ka 0.000000 0.000000 0.000000
+Kd 0.823529 0.705882 0.549020
+Ks 0.330000 0.330000 0.330000
+
+newmtl Stacy_Shoe
+Ka 0.000000 0.000000 0.000000
+Kd 0.901961 0.168627 0.172549
+Ks 0.330000 0.330000 0.330000
+
+newmtl Stacy_Shirt
+Ka 0.000000 0.000000 0.000000
+Kd 0.400000 0.400000 0.400000
+Ks 0.330000 0.330000 0.330000
+
+newmtl Stacy_Hair
+Ka 0.000000 0.000000 0.000000
+Kd 0.141176 0.074510 0.027451
+Ks 0.330000 0.330000 0.330000
+
+newmtl Stacy_Pants
+Ka 0.000000 0.000000 0.000000
+Kd 0.156863 0.227451 0.368627
+Ks 0.330000 0.330000 0.330000
+
+newmtl _Concrete_Block_8x8_Gray_1
+Ka 0.000000 0.000000 0.000000
+Kd 0.615686 0.619608 0.603922
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/_Concrete_Block_8x8_Gray_1.jpg
+
+newmtl Black_Lines_4
+Ka 0.000000 0.000000 0.000000
+Kd 0.749020 0.749020 0.749020
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/Black_Lines_4.png
+
+newmtl Groundcover_Sand_Raked
+Ka 0.000000 0.000000 0.000000
+Kd 0.647059 0.619608 0.588235
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/Groundcover_Sand_Raked.jpg
+
+newmtl Pavers_with_Grass_Herringbone
+Ka 0.000000 0.000000 0.000000
+Kd 0.772549 0.788235 0.745098
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/Pavers_with_Grass_Herringbone.jpg
+
+newmtl Vegetation_Grass1
+Ka 0.000000 0.000000 0.000000
+Kd 0.564706 0.627451 0.356863
+Ks 0.330000 0.330000 0.330000
+map_Kd th2/Vegetation_Grass1.jpg
+

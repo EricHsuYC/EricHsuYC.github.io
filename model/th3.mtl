@@ -1,0 +1,282 @@
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl Concrete_Block_8x8_Gray
+Ka 0.000000 0.000000 0.000000
+Kd 0.882353 0.886275 0.866667
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/Concrete_Block_8x8_Gray.jpg
+
+newmtl ForegroundColor
+Ka 0.000000 0.000000 0.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.330000 0.330000 0.330000
+
+newmtl Concrete_Aggregate_Smoke
+Ka 0.000000 0.000000 0.000000
+Kd 0.458824 0.447059 0.439216
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/Concrete_Aggregate_Smoke.jpg
+
+newmtl FrontColor
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.330000 0.330000 0.330000
+
+newmtl BackColor
+Ka 0.000000 0.000000 0.000000
+Kd 0.643137 0.698039 0.733333
+Ks 0.330000 0.330000 0.330000
+
+newmtl _1
+Ka 0.000000 0.000000 0.000000
+Kd 0.564706 0.807843 0.917647
+Ks 0.330000 0.330000 0.330000
+d 0.720000
+
+newmtl Vegetation_Grass
+Ka 0.000000 0.000000 0.000000
+Kd 0.572549 0.639216 0.360784
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/Vegetation_Grass.jpg
+
+newmtl Metal_Aluminum_Anodized
+Ka 0.000000 0.000000 0.000000
+Kd 0.792157 0.819608 0.858824
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/Metal_Aluminum_Anodized.jpg
+
+newmtl Concrete_Brushed
+Ka 0.000000 0.000000 0.000000
+Kd 0.752941 0.752941 0.752941
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/Concrete_Brushed.jpg
+
+newmtl M_0056_Yellow
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 0.000000
+Ks 0.330000 0.330000 0.330000
+
+newmtl Vegetation_Grass_Green
+Ka 0.000000 0.000000 0.000000
+Kd 0.400000 0.619608 0.298039
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/Vegetation_Grass_Green.jpg
+
+newmtl Asphalt_Rubber_Blue
+Ka 0.000000 0.000000 0.000000
+Kd 0.215686 0.215686 0.607843
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/Asphalt_Rubber_Blue.jpg
+
+newmtl Asphalt_Rubber_Red_
+Ka 0.000000 0.000000 0.000000
+Kd 0.607843 0.215686 0.215686
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/Asphalt_Rubber_Red_.jpg
+
+newmtl Asphalt_Rubber_Black
+Ka 0.000000 0.000000 0.000000
+Kd 0.215686 0.215686 0.215686
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/Asphalt_Rubber_Black.jpg
+
+newmtl Asphalt_Rubber_Yellow
+Ka 0.000000 0.000000 0.000000
+Kd 0.701961 0.627451 0.227451
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/Asphalt_Rubber_Yellow.jpg
+
+newmtl Asphalt_Rubber_Green
+Ka 0.000000 0.000000 0.000000
+Kd 0.215686 0.686275 0.215686
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/Asphalt_Rubber_Green.jpg
+
+newmtl Asphalt_Rubber_White
+Ka 0.000000 0.000000 0.000000
+Kd 0.784314 0.784314 0.784314
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/Asphalt_Rubber_White.jpg
+
+newmtl Polished_Concrete_New
+Ka 0.000000 0.000000 0.000000
+Kd 0.662745 0.662745 0.674510
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/Polished_Concrete_New.jpg
+
+newmtl Groundcover_River_Rock_4_inch
+Ka 0.000000 0.000000 0.000000
+Kd 0.607843 0.607843 0.607843
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/Groundcover_River_Rock_4_inch.jpg
+
+newmtl Concrete_Block_Retaining_Gray
+Ka 0.000000 0.000000 0.000000
+Kd 0.474510 0.474510 0.474510
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/Concrete_Block_Retaining_Gray.jpg
+
+newmtl Roofing_Shingles_GAF_Estates
+Ka 0.000000 0.000000 0.000000
+Kd 0.317647 0.301961 0.290196
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/Roofing_Shingles_GAF_Estates.jpg
+
+newmtl Wood_Floor
+Ka 0.000000 0.000000 0.000000
+Kd 0.337255 0.266667 0.200000
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/Wood_Floor.jpg
+
+newmtl Translucent_Glass_Safety
+Ka 0.000000 0.000000 0.000000
+Kd 0.317647 0.317647 0.317647
+Ks 0.330000 0.330000 0.330000
+d 0.340000
+map_Kd th3/Translucent_Glass_Safety.jpg
+
+newmtl Color_M01
+Ka 0.000000 0.000000 0.000000
+Kd 0.886275 0.886275 0.886275
+Ks 0.330000 0.330000 0.330000
+
+newmtl Color_C08
+Ka 0.000000 0.000000 0.000000
+Kd 0.388235 0.294118 0.196078
+Ks 0.330000 0.330000 0.330000
+
+newmtl _Brick_Antique_01_1
+Ka 0.000000 0.000000 0.000000
+Kd 0.576471 0.411765 0.278431
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/_Brick_Antique_01_1.jpg
+
+newmtl Blinds_Roman_Hobbled_Blue
+Ka 0.000000 0.000000 0.000000
+Kd 0.317647 0.321569 0.341176
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/Blinds_Roman_Hobbled_Blue.jpg
+
+newmtl Pavers_Modular_Brick
+Ka 0.000000 0.000000 0.000000
+Kd 0.686275 0.560784 0.505882
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/Pavers_Modular_Brick.jpg
+
+newmtl Wood_Floor_Light
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.690196 0.498039
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/Wood_Floor_Light.jpg
+
+newmtl Fencing_Lattice_Natural
+Ka 0.000000 0.000000 0.000000
+Kd 0.427451 0.427451 0.427451
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/Fencing_Lattice_Natural.png
+
+newmtl _Wood_Floor_1
+Ka 0.000000 0.000000 0.000000
+Kd 0.607843 0.411765 0.239216
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/_Wood_Floor_1.jpg
+
+newmtl _Metal_Corrugated_Shiny_1
+Ka 0.000000 0.000000 0.000000
+Kd 0.439216 0.439216 0.439216
+Ks 0.330000 0.330000 0.330000
+d 0.300000
+map_Kd th3/_Metal_Corrugated_Shiny_1.jpg
+
+newmtl Polished_Concrete_Old
+Ka 0.000000 0.000000 0.000000
+Kd 0.968627 0.968627 0.968627
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/Polished_Concrete_Old.jpg
+
+newmtl _Cinder_Block_1
+Ka 0.000000 0.000000 0.000000
+Kd 0.729412 0.749020 0.749020
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/_Cinder_Block_1.jpg
+
+newmtl Color_M04
+Ka 0.000000 0.000000 0.000000
+Kd 0.556863 0.556863 0.556863
+Ks 0.330000 0.330000 0.330000
+
+newmtl Metal_Corrugated_Shiny
+Ka 0.000000 0.000000 0.000000
+Kd 0.807843 0.807843 0.807843
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/Metal_Corrugated_Shiny.jpg
+
+newmtl TH_048CP
+Ka 0.000000 0.000000 0.000000
+Kd 0.517647 0.525490 0.462745
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/TH_048CP.png
+
+newmtl TH_043CP
+Ka 0.000000 0.000000 0.000000
+Kd 0.392157 0.462745 0.243137
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/TH_043CP.png
+
+newmtl Stacy_Skin
+Ka 0.000000 0.000000 0.000000
+Kd 0.823529 0.705882 0.549020
+Ks 0.330000 0.330000 0.330000
+
+newmtl Stacy_Shoe
+Ka 0.000000 0.000000 0.000000
+Kd 0.901961 0.168627 0.172549
+Ks 0.330000 0.330000 0.330000
+
+newmtl Stacy_Shirt
+Ka 0.000000 0.000000 0.000000
+Kd 0.400000 0.400000 0.400000
+Ks 0.330000 0.330000 0.330000
+
+newmtl Stacy_Hair
+Ka 0.000000 0.000000 0.000000
+Kd 0.141176 0.074510 0.027451
+Ks 0.330000 0.330000 0.330000
+
+newmtl Stacy_Pants
+Ka 0.000000 0.000000 0.000000
+Kd 0.156863 0.227451 0.368627
+Ks 0.330000 0.330000 0.330000
+
+newmtl _Concrete_Block_8x8_Gray_1
+Ka 0.000000 0.000000 0.000000
+Kd 0.615686 0.619608 0.603922
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/_Concrete_Block_8x8_Gray_1.jpg
+
+newmtl Black_Lines_4
+Ka 0.000000 0.000000 0.000000
+Kd 0.749020 0.749020 0.749020
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/Black_Lines_4.png
+
+newmtl Groundcover_Sand_Raked
+Ka 0.000000 0.000000 0.000000
+Kd 0.647059 0.619608 0.588235
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/Groundcover_Sand_Raked.jpg
+
+newmtl Pavers_with_Grass_Herringbone
+Ka 0.000000 0.000000 0.000000
+Kd 0.772549 0.788235 0.745098
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/Pavers_with_Grass_Herringbone.jpg
+
+newmtl Vegetation_Grass1
+Ka 0.000000 0.000000 0.000000
+Kd 0.564706 0.627451 0.356863
+Ks 0.330000 0.330000 0.330000
+map_Kd th3/Vegetation_Grass1.jpg
+
