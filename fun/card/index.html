@@ -1,58 +1,42 @@
-<!doctype HTML>
-<html>
+<!-- include a-frame -->
+<!-- <script src="../vendor/aframe/build/aframe.js"></script> -->
+<!-- include ar.js for aframe -->
+<!-- <script src='../../build/aframe-ar.js'></script> -->
+<!-- <script>ARjs.Context.baseURL = '../../../three.js/'</script> -->
+
 <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
 <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+<!-- <script>ARjs.Context.baseURL = 'src/three.js/'</script> -->
+
+
+
+<!-- include aframe-portal-door -->
+<script src='src/aframe-portal-door.js'></script>
+<script src='src/threex-portal-door.js'></script>
+
+<!-- start the body of your page -->
 
 <body style='margin : 0px; overflow: hidden;'>
-    <a-scene embedded arjs="patternRatio: 0.75; sourceType: webcam; debugUIEnabled: false;" vr-mode-ui="enabled: false">
-        <a-assets>
-            <!-- <a-asset-item id="corner" src="model/gltf/corner/scene.gltf"></a-asset-item> -->
-            <!-- <a-asset-item id="sport" src="model/gltf/sport/scene.gltf"></a-asset-item> -->
-            <a-asset-item id="bamboo" src="model/gltf/bamboo/scene.gltf"></a-asset-item>
+	<!-- add some info at the top of the page -->
 
 
-            <!-- <a-asset-item id="sh" src="model/gltf/sh/scene.gltf"></a-asset-item> -->
-        </a-assets>
-        <!-- <a-marker preset='custom' type='pattern' url='file:///E:/Users/hsuyce/Documents/GitHub/aerchit.github.io/marker/2/pattern-marker.patt'> -->
-        <!-- <a-marker preset='custom' type='pattern' url='https://aerchit.github.io/marker/2/pattern-marker.patt'> -->
-        <a-marker preset='custom' type='pattern' url='marker/3/pattern-marker02.patt'>
+	<!-- Define your 3d scene and enabled ar.js -->
+	<a-scene embedded arjs="patternRatio: 0.75; sourceType: webcam; debugUIEnabled: false;" vr-mode-ui="enabled: false">
 
-            <!-- <a-marker preset='custom' type='pattern' url='https://aerchit.github.io/marker/1/pattern-marker2.patt'> -->
-            <!-- <a-marker preset=’hiro’> -->
+		<!-- Create a anchor to attach your augmented reality -->
+		<a-marker preset='custom' type='pattern' url='marker/pattern-marker.patt'>
 
-            <!-- <a-box position='0 0.5 0' material='color: white;'></a-box> -->
-            <!-- <a-entity collada-model=”url(model/for_AR.dae)” scale="0.015 0.015 0.015"> </a-entity>  -->
-            <!-- <a-entity scale="0.001 0.001 0.001" gltf-model="#corner"></a-entity> -->
-            <!-- <a-entity scale="0.5 0.5 0.5" gltf-model="#sport"></a-entity> -->
-            <a-entity scale="0.5 0.5 0.5" gltf-model="#bamboo"></a-entity>
+			<!-- portal 360 with an image -->
+			<a-portal-door url='img/360.jpeg' position='0.6 0 -0.7' scale='2.8 2.6 2.6' rotation='-90 90 0'><a-portal-door>
 
+					<!-- portal 360 with an video -->
+					<!-- <a-portal-door url='videos/pano.webm' position='0 0 0' scale='2 2 2' rotation='0 90 0'><a-portal-door> -->
+					<!-- <a-portal-door url='videos/aframe-city-360.mp4' position='0 0 0' scale='2 2 2' rotation='0 90 0'><a-portal-door> -->
 
-            <!-- <a-entity scale="0.000005 0.000005 0.000005" position="0.846 0 0.745" gltf-model="#sh"></a-entity> -->
+		</a-marker>
 
-            <!-- <a-entity gltf-model-next="src: url(model/gltf/corner/scene.gltf);">
-            </a-entity> -->
-
-            <!-- <a-entity obj-model="obj: url(model/th2.obj); 
-            mtl: url(model/th2.mtl)" scale="0.011 0.011 0.011">
-            </a-entity> -->
-            <a-image src="image/aecom.jpg" scale="0.25 0.25 0.25"></a-image>
-
-        </a-marker>
-
-        <a-entity camera></a-entity>
-        <!-- <a-marker-camera type='pattern' patternUrl='marker/pattern-marker.patt'></a-marker-camera> -->
-
-
-
-    </a-scene>
-    <!-- <script>
-        // Workaround for an AR.js bug (https://github.com/jeromeetienne/AR.js/issues/410)
-        const sceneEl = document.querySelector('a-scene');
-        sceneEl.addEventListener('loaded', () => {
-            sceneEl.camera = new THREE.PerspectiveCamera();
-        });
-    </script> -->
+		<!-- Define a static camera -->
+		<a-camera-static/>
+	</a-scene>
 </body>
-
-</html>
