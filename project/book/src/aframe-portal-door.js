@@ -29,6 +29,9 @@ AFRAME.registerComponent('arjs-portal-door', {
 	},
 	tick: function(){
 		this._portalDoor.update()
+
+
+
 	}
 })
 

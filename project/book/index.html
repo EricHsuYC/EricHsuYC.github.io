@@ -21,22 +21,24 @@
 		<a-assets>
 			<img id="360" src="img/360.jpeg">
 		</a-assets>
+		
 
 		<!-- Create a anchor to attach your augmented reality -->
-		<a-marker-camera preset='custom' type='pattern' url='marker/pattern-marker.patt'>
-
+		<a-anchor preset='custom' type='pattern' url='marker/pattern-marker.patt'>
+			<a-sky src="#360"></a-sky>
 			<!-- portal 360 with an image -->
-			<a-portal-door url='img/360.jpeg' position='0 0 0' scale='1 1 1' rotation='90 0 0'>
-			<a-portal-door>
-			<!-- <a-entity link="href: index.html; title: My Homepage; image: #360; peekMode: false"></a-entity> -->
+			<a-portal-door url='img/360.jpeg' position='0 0 0' scale='1 1 1' rotation='90 0 0' animation='property: position; to: 0 0 -1000; dur: 1500; easing: linear'>
+				<a-portal-door>
+					<!-- <a-entity link="href: index.html; title: My Homepage; image: #360; peekMode: false"></a-entity> -->
 
 					<!-- portal 360 with an video -->
 					<!-- <a-portal-door url='videos/pano.webm' position='0 0 0' scale='2 2 2' rotation='0 90 0'><a-portal-door> -->
 					<!-- <a-portal-door url='videos/aframe-city-360.mp4' position='0 0 0' scale='2 2 2' rotation='0 90 0'><a-portal-door> -->
 
-		</a-marker-camera>
+		</a-anchor>
 
 		<!-- Define a static camera -->
 		<a-camera-static />
 	</a-scene>
+
 </body>
