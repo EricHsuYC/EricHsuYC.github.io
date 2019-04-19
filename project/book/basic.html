@@ -24,7 +24,7 @@
             marker.addEventListener('animationend', function () {
 
                 console.log('animation ends');
-                window.location.href = "360.html";
+                // window.location.href = "360.html";
 
 
             });
@@ -60,11 +60,15 @@
             url='marker/pattern-marker.patt'>
 
             <!-- portal 360 with an image -->
-            <a-portal-door id='portal' url='img/360.jpeg' position='0 2 0' scale='0.5 0.5 0.5' rotation='0 0 0'>
-                <a-animation registerevents emitevents="true" id='a' attribute="position" from="0 0 0" to="0 1 3"
-                    dur="1500" repeat="0" easing="linear" begin="markerfound" end="markerlost"></a-animation>
-                <a-animation id='s' attribute="scale" from="0.3 0.3 0.3" to="1 1 1" dur="1500" repeat="0"
-                    easing="linear" begin="markerfound" end="markerlost"></a-animation>
+            <a-portal-door id='portal' url='img/360.jpeg' position='0 0 0' scale='0.5 0.5 0.5' rotation='-90 0 0'>
+                <a-animation registerevents emitevents="true" id='scale1' attribute="scale" delay="0" from="0.5 0.01 0.5" to="0.5 0.5 0.5"
+                dur="1500" repeat="0" easing="ease-in-out" begin="markerfound" end="markerlost"></a-animation>
+
+                <a-animation id='rotate1' attribute="rotate" to="180 180 0"
+                dur="1500" repeat="0" easing="linear"></a-animation>
+                
+                <a-animation id='s' attribute="scale" delay="1000"  from="0.3 0.3 0.3" to="1 1 1" dur="1500" repeat="0"
+                    easing="linear" begin="xmarkerfound" end="xmarkerlost"></a-animation>
 
                 <a-portal-door>
                     <!-- <a-entity link="href: index.html; title: My Homepage; image: #360; peekMode: false"></a-entity> -->
