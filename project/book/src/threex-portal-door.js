@@ -204,7 +204,7 @@ THREEx.Portal360.prototype._buildRectangularFrame = function(radius, width, heig
 	var material = new THREE.MeshNormalMaterial()
 	var material = new THREE.MeshPhongMaterial({
 		color: 'silver',
-		emissive: 'green'
+		emissive: 'white'
 	})
 
 	var geometryBeamVertical = new THREE.CylinderGeometry(radius, radius, height - radius)

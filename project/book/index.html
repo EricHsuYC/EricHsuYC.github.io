@@ -22,13 +22,13 @@
 			<img id="360" src="img/360.jpeg">
 		</a-assets>
 
-		<a-sky src="#360"></a-sky>
+		<!-- <a-sky src="#360"></a-sky> -->
 		<!-- Create a anchor to attach your augmented reality -->
 		<a-anchor preset='custom' type='pattern' url='marker/pattern-marker.patt'>
 
 			<!-- portal 360 with an image -->
-			<a-portal-door url='img/360.jpeg' position='0 0 0' scale='1 1 1' rotation='90 0 0'>
-				<a-animation attribute="position" from="0 0 0" to="0 360 0" dur="4000000" repeat="indefinite" easing="linear"></a-animation>
+			<a-portal-door url='img/360.jpeg' position='0 0 0' scale='0.6 0.6 0.6' rotation='0 0 0'>
+				<!-- <a-animation attribute="position" from="0 0 0" to="0 0 360" dur="400000" repeat="indefinite" easing="linear"></a-animation> -->
 				<a-portal-door>
 					<!-- <a-entity link="href: index.html; title: My Homepage; image: #360; peekMode: false"></a-entity> -->
 
