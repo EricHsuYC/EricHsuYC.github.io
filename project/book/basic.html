@@ -1,13 +1,14 @@
 <!-- include a-frame -->
-<script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
 <!-- include ar.js for aframe -->
-<script src='src/aframe-ar.js'></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"> </script>
+<!-- <script src='src/aframe-ar.js'></script> -->
 <!-- <script>ARjs.Context.baseURL = 'src/three.js'</script> -->
 <!-- include aframe-portal-door -->
 <script src='src/aframe-portal-door.js'></script>
 <script src='src/threex-portal-door.js'></script>
 <script>
-AFRAME.registerComponent('registerevents', {
+    AFRAME.registerComponent('registerevents', {
         init: function () {
             var marker = this.el;
 
@@ -19,6 +20,13 @@ AFRAME.registerComponent('registerevents', {
 
                 // Start animation
                 document.querySelector('#portal').emit('markerfound');
+            });
+            marker.addEventListener('animationend', function () {
+
+                console.log('animation ends');
+                window.location.href = "360.html";
+
+
             });
 
             // Register events that have lost sight of markers
@@ -37,32 +45,39 @@ AFRAME.registerComponent('registerevents', {
 <!-- start the body of your page -->
 
 <body style='margin : 0px; overflow: hidden;'>
-	<!-- add some info at the top of the page -->
+    <!-- add some info at the top of the page -->
 
-	<!-- Define your 3d scene and enabled ar.js -->
-	<a-scene embedded arjs="patternRatio: 0.75; sourceType: webcam; debugUIEnabled: false;" vr-mode-ui="enabled: false">
-		<a-assets>
-			<img id="360" src="img/360.jpeg">
-		</a-assets>
+    <!-- Define your 3d scene and enabled ar.js -->
+    <a-scene id="scene1" embedded arjs="patternRatio: 0.75; sourceType: webcam; debugUIEnabled: false;"
+        vr-mode-ui="enabled: false">
+        <a-assets>
+            <img id="360" src="img/360.jpeg">
+        </a-assets>
 
-		<!-- <a-sky src="#360"></a-sky> -->
-		<!-- Create a anchor to attach your augmented reality -->
-		<a-marker emitevents="true" id='mk' preset='custom' type='pattern' url='marker/pattern-marker.patt'>
+        <!-- <a-sky src="#360"></a-sky> -->
+        <!-- Create a anchor to attach your augmented reality -->
+        <a-marker markerhandler registerevents emitevents="true" id='mk' preset='custom' type='pattern'
+            url='marker/pattern-marker.patt'>
 
             <!-- portal 360 with an image -->
-			<a-portal-door id='portal' url='img/360.jpeg' position='0 1 0' scale='0.8 0.8 0.8' rotation='0 0 0'>
-				<a-animation id='a' attribute="position" from="0 0 0" to="0 0 30" dur="15000" repeat="indefinite" easing="linear" startEvents="markerFound"></a-animation>
-				<a-portal-door>
-					<!-- <a-entity link="href: index.html; title: My Homepage; image: #360; peekMode: false"></a-entity> -->
+            <a-portal-door id='portal' url='img/360.jpeg' position='0 2 0' scale='0.5 0.5 0.5' rotation='0 0 0'>
+                <a-animation registerevents emitevents="true" id='a' attribute="position" from="0 0 0" to="0 1 3"
+                    dur="1500" repeat="0" easing="linear" begin="markerfound" end="markerlost"></a-animation>
+                <a-animation id='s' attribute="scale" from="0.3 0.3 0.3" to="1 1 1" dur="1500" repeat="0"
+                    easing="linear" begin="markerfound" end="markerlost"></a-animation>
 
-					<!-- portal 360 with an video -->
-					<!-- <a-portal-door url='videos/pano.webm' position='0 0 0' scale='2 2 2' rotation='0 90 0'><a-portal-door> -->
-					<!-- <a-portal-door url='videos/aframe-city-360.mp4' position='0 0 0' scale='2 2 2' rotation='0 90 0'><a-portal-door> -->
+                <a-portal-door>
+                    <!-- <a-entity link="href: index.html; title: My Homepage; image: #360; peekMode: false"></a-entity> -->
 
-		</a-marker>
+                    <!-- portal 360 with an video -->
+                    <!-- <a-portal-door url='videos/pano.webm' position='0 0 0' scale='2 2 2' rotation='0 90 0'><a-portal-door> -->
+                    <!-- <a-portal-door url='videos/aframe-city-360.mp4' position='0 0 0' scale='2 2 2' rotation='0 90 0'><a-portal-door> -->
 
-		<!-- Define a static camera -->
-		<a-camera-static />
-	</a-scene>
+        </a-marker>
+
+        <!-- Define a static camera -->
+        <a-camera-static />
+    </a-scene>
+
 
 </body>
