@@ -26,7 +26,7 @@
 
                 console.log('animation ends');
                 a_count = a_count + 1;
-                if(a_count >= 6){
+                if(a_count >= 4){
                     window.location.href = "360.html";
                 };
                 
@@ -73,10 +73,6 @@
             <a-portal-door visible="true" id='portal' url='img/360.jpeg' position='0 0 0' scale='0.5 0.05 0.5' rotation='-90 0 0'>
                 <!-- reset -->
                 <a-animation registerevents emitevents="false" id='position0' attribute="position" delay="0" to="0 0 0"
-                dur="0" repeat="0" begin="markerfound" end="markerlost"></a-animation>
-                <a-animation registerevents emitevents="false" id='rotate0' attribute="rotation" delay="0" to="-90 0 0"
-                dur="0" repeat="0" begin="markerfound" end="markerlost"></a-animation>
-                <a-animation registerevents emitevents="false" id='scale0' attribute="scale" delay="0" to="0.5 0.05 0.5"
                 dur="0" repeat="0" begin="markerfound" end="markerlost"></a-animation>
                 <!-- reset -->
 
