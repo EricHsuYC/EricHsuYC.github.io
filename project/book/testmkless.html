@@ -42,9 +42,13 @@
                 a_count = 0;
                 mkp = document.getElementById('mk').object3D.getWorldPosition();
                 console.log(mkp);
+                document.getElementById('mk').object3D.visible = true;
+
+                // document.getElementById('scene1').setAttribute('visible', 'false');
+                // document.getElementById('scene2').setAttribute('visible', 'true');
 
 
-                
+
 
                 // Stop animation
                 document.querySelector('#portal').emit('markerlost');
@@ -75,7 +79,7 @@
 
         <!-- <a-sky src="#360"></a-sky> -->
         <!-- Create a anchor to attach your augmented reality -->
-        <a-marker markerhandler registerevents emitevents="true" id='mk' preset='custom' type='pattern' url='marker/pattern-marker.patt'>
+        <a-marker visible="false" registerevents emitevents="true" id='mk' preset='custom' type='pattern' url='marker/pattern-marker.patt'>
             <!-- <a-sky src='img/360.jpeg'></a-sky> -->
             <!-- <a-curvedimage src="#360" height="3.0" radius="5.7" theta-length="72"
                  rotation="0 100 0" scale="0.8 0.8 0.8"></a-curvedimage> -->
@@ -112,6 +116,8 @@
         <!-- Define a static camera -->
         <a-camera-static look-controls pointerLockEnabled/>
     </a-scene>
+
+
     <!-- <script>
             // Workaround for an AR.js bug (https://github.com/jeromeetienne/AR.js/issues/410)
             const sceneEl = document.querySelector('a-scene');
