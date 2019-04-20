@@ -8,15 +8,21 @@
 <script src='src/aframe-portal-door.js'></script>
 <script src='src/threex-portal-door.js'></script>
 <script>
+    var mkState = 0;
+    var scan = 0;
+    var mkp = 0;
     AFRAME.registerComponent('registerevents', {
         init: function () {
             var marker = this.el;
             var a_count = 0;
-            var mkp = 0;
+
 
             // Register event that detected marker
 
             marker.addEventListener('markerFound', function () {
+                // document.getElementById('portal').object3D.visible = false;
+                scan = 1;
+                mkState = 1;
                 var markerId = marker.id;
                 console.log('markerFound', markerId);
                 a_count = 0;
@@ -37,12 +43,17 @@
 
             // Register events that have lost sight of markers
             marker.addEventListener('markerLost', function () {
+                mkState = 0;
+
                 var markerId = marker.id;
                 console.log('markerLost', markerId);
                 a_count = 0;
                 mkp = document.getElementById('mk').object3D.getWorldPosition();
-                console.log(mkp);
-                document.getElementById('mk').object3D.visible = true;
+                // console.log(mkp);
+                if (mkState == 0 && scan == 1) {
+                    document.getElementById('mk').object3D.visible = true;
+
+                };
 
                 // document.getElementById('scene1').setAttribute('visible', 'false');
                 // document.getElementById('scene2').setAttribute('visible', 'true');
@@ -55,7 +66,15 @@
             });
         },
         tick: function () {
+            var ifr = document.getElementById("ifr").contentWindow.cmkp; // iframe window object
+            // elements in iframe
+
+
+            console.log(ifr);
+
             // document.getElementById('mk').object3D.visible = true;
+            // this.el.object3D.visible = true;
+
 
             // mkp = document.getElementById('mk').object3D.getWorldPosition();
 
@@ -89,20 +108,20 @@
             <a-portal-door visible="true" id='portal' url='img/360.jpeg' position='0 0 0' scale='0.5 0.05 0.5' rotation='-90 0 0'>
                 <!-- reset -->
                 <a-animation registerevents emitevents="false" id='position0' attribute="position" delay="0" to="0 0 0" dur="0" repeat="0"
-                    begin="markerfound" end="markerlost"></a-animation>
+                    begin="markerfound" end="xmarkerlost"></a-animation>
                 <!-- reset -->
 
                 <a-animation registerevents emitevents="false" id='scale1' attribute="scale" delay="0" from="0.5 0.05 0.5" to="0.5 0.5 0.5"
-                    dur="1500" repeat="0" easing="ease-in-out" begin="markerfound" end="markerlost"></a-animation>
+                    dur="1500" repeat="0" easing="ease-in-out" begin="markerfound" end="xmarkerlost"></a-animation>
 
                 <a-animation registerevents emitevents="false" id='scale2' attribute="scale" delay="1500" from="0.5 0.5 0.5" to="5 5 5" dur="1500"
-                    repeat="0" easing="ease-in-out" begin="markerfound" end="markerlost"></a-animation>
+                    repeat="0" easing="ease-in-out" begin="markerfound" end="xmarkerlost"></a-animation>
 
                 <a-animation registerevents emitevents="true" id='position1' attribute="position" delay="1500" from="0 0 0" to="0 0 5" dur="1500"
-                    repeat="0" easing="ease-in-out" begin="markerfound" end="markerlost"></a-animation>
+                    repeat="0" easing="ease-in-out" begin="markerfound" end="xmarkerlost"></a-animation>
 
                 <!-- <a-animation registerevents emitevents="true" id='rotate1' attribute="rotation" delay="1500" from="-90 0 0" to="0 0 0"
-                dur="1500" repeat="0" easing="ease-in-out" begin="markerfound" end="markerlost"></a-animation> -->
+                dur="1500" repeat="0" easing="ease-in-out" begin="markerfound" end="xmarkerlost"></a-animation> -->
 
                 <a-portal-door>
                     <!-- <a-entity link="href: index.html; title: My Homepage; image: #360; peekMode: false"></a-entity> -->
@@ -126,5 +145,5 @@
             });
     </script> -->
 
-
+    <iframe id="ifr" src="aframe.html" frameborder="0" style="display:none;"></iframe>
 </body>

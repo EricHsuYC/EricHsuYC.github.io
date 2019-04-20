@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Hello, WebVR! • A-Frame</title>
+    <meta name="description" content="Hello, WebVR! • A-Frame">
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+</head>
+<script>
+    // THREEx.ArMarkerControls.disable = true;
+    var positionSet = 0;
+    var pmkp = 0;
+    var cmkp = 0.1;
+    AFRAME.registerComponent('registerevents', {
+        init: function () {
+
+
+
+
+
+        },
+        tick: function () {
+
+            // if (positionSet == 1) {
+            //     document.getElementById('box').object3D.position.set(parent.mkp);
+
+            //     positionSet = 0;
+            // };
+            // cmkp = document.getElementById('box').object3D.getWorldPosition();
+            cmkp = document.getElementById('box').object3D.getWorldPosition();
+
+
+
+
+
+
+        }
+    });
+
+</script>
+
+<body>
+    <a-scene background="color: #FAFAFA">
+        <a-box id="box" position="0 0 0" rotation="0 0 0" color="#4CC3D9"></a-box>
+    </a-scene>
+    <a-camera look-controls pointerLockEnabled/>
+
+</body>
+
+</html>
