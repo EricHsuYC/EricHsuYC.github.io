@@ -97,7 +97,9 @@
        
 
         <!-- Define a static camera -->
-        <a-camera-static />
+        <a-entity camera look-controls pointerLockEnabled>
+                <a-cursor></a-cursor>
+            </a-entity>
     </a-scene>
     <script>
             // Workaround for an AR.js bug (https://github.com/jeromeetienne/AR.js/issues/410)
