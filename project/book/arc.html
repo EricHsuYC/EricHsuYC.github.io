@@ -15,13 +15,14 @@
     }
 
     img {
-        height: 250px;
-        left: 50%;
-        margin-top: -125px;
-        margin-left: -125px;
+        height: 25vmin;
+        left: 50vw;
+        margin-top: -12.5vmin;
+        margin-left: -12.5vmin;
         position: absolute;
-        top: 50%;
-        width: 250px;
+        top: 50vh;
+        width: 25vmin;
+        z-index: 1;
     }
 </style>
 <script>
@@ -40,6 +41,10 @@
                 // Start animation
                 document.querySelector('#portal').emit('markerfound');
                 document.querySelector('#sph').emit('markerfound');
+                document.getElementById("helptxt").style.visibility = "hidden";
+                document.getElementById("helpimg").style.visibility = "hidden";
+
+                // document.getElementsByClassName("help").display="none";
 
             });
             marker.addEventListener('animationend', function () {
@@ -59,6 +64,8 @@
                 var markerId = marker.id;
                 console.log('markerLost', markerId);
                 a_count = 0;
+                document.getElementById("helptxt").style.visibility = "visible";
+                document.getElementById("helpimg").style.visibility = "visible";
                 // mkp = document.getElementById('mk').object3D.getWorldPosition();
                 // console.log(mkp);
 
@@ -84,10 +91,10 @@
 <!-- start the body of your page -->
 
 <body style='margin : 0px; overflow: hidden;'>
-    <div style='position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;'>
-        <p style="color:#00b5e2;">Please aim at the marker</p>
+    <div class="help" style='position: absolute; top: 10px; width:100%; text-align: center'>
+        <p id="helptxt" style="color:#00b5e2;">Please aim at the marker</p>
     </div>
-    <img src="img/focus.png" class="centerImage" alt="CH Logo" height="120" width="120">
+    <img id="helpimg" src="img/focus.png" class="centerImage help" alt="CH Logo" height="120" width="120">
     <!-- add some info at the top of the page -->
 
     <!-- Define your 3d scene and enabled ar.js -->
