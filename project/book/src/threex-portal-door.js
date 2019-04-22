@@ -134,10 +134,10 @@ THREEx.Portal360.prototype._buildInsideMesh	= function(texture360, doorWidth, do
 	//////////////////////////////////////////////////////////////////////////////
 	// add 360 texture
 	// TODO put that in a this.data
-	var radius360Sphere = 10
+	var radius360Sphere = 100
 	// var radius360Sphere = 1
 
-	var geometry = new THREE.SphereGeometry( radius360Sphere, 64, 64).rotateZ(Math.PI)
+	var geometry = new THREE.SphereGeometry( radius360Sphere, 32, 32).rotateZ(Math.PI)
 	var material = new THREE.MeshBasicMaterial( {
 		map: texture360,
 		// opacity: 0.9,
@@ -170,11 +170,11 @@ THREEx.Portal360.prototype._buildOutsideMesh = function(texture360, doorWidth, d
 	//		add 360 sphere
 	//////////////////////////////////////////////////////////////////////////////
 	// add 360 texture
-	var radius360Sphere = 10
+	var radius360Sphere = 100
 	// var radius360Sphere = 1
 
 	// build half sphere geometry
-	var geometry = new THREE.SphereGeometry( radius360Sphere, 100, 100, Math.PI, Math.PI, 0, Math.PI).rotateZ(Math.PI)
+	var geometry = new THREE.SphereGeometry( radius360Sphere, 32, 32, Math.PI, Math.PI, 0, Math.PI).rotateZ(Math.PI)
 	// fix UVs
 	geometry.faceVertexUvs[0].forEach(function(faceUvs){
 		faceUvs.forEach(function(uv){

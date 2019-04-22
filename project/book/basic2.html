@@ -1,5 +1,5 @@
 <!-- include a-frame -->
-<script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
 <!-- include ar.js for aframe -->
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"> </script>
 <!-- <script src='src/aframe-ar.js'></script> -->
@@ -7,24 +7,33 @@
 <!-- include aframe-portal-door -->
 <script src='src/aframe-portal-door.js'></script>
 <script src='src/threex-portal-door.js'></script>
+<!-- <script src="src/aframe-extras.grid.min.js"></script> -->
+
 <script>
+
     AFRAME.registerComponent('registerevents', {
         init: function () {
             var marker = this.el;
-            
+            var a_count = 0;
+            var mkp = 0;
+
             // Register event that detected marker
-            
+
             marker.addEventListener('markerFound', function () {
                 var markerId = marker.id;
                 console.log('markerFound', markerId);
-
+                a_count = 0;
                 // Start animation
                 document.querySelector('#portal').emit('markerfound');
             });
             marker.addEventListener('animationend', function () {
 
-                console.log('animationcomplete__position1');
-                window.location.href = "360.html";
+                console.log('animation ends');
+                a_count = a_count + 1;
+                if (a_count >= 4) {
+                    window.location.href = "360.html";
+                };
+
 
 
             });
@@ -33,10 +42,24 @@
             marker.addEventListener('markerLost', function () {
                 var markerId = marker.id;
                 console.log('markerLost', markerId);
+                a_count = 0;
+                // mkp = document.getElementById('mk').object3D.getWorldPosition();
+                // console.log(mkp);
+
+
+
 
                 // Stop animation
                 document.querySelector('#portal').emit('markerlost');
             });
+        },
+        tick: function () {
+            // document.getElementById('mk').object3D.visible = true;
+
+            // mkp = document.getElementById('mk').object3D.getWorldPosition();
+
+
+
         }
     });
 
@@ -54,50 +77,47 @@
             <img id="360" src="img/360.jpeg">
         </a-assets>
 
-        <!-- <a-sky src="#360"></a-sky> -->
-        <!-- Create a anchor to attach your augmented reality -->
-        <a-marker registerevents id='mk' preset='custom' type='pattern'
-            url='marker/pattern-marker.patt'>
-            <!-- <a-sky src='img/360.jpeg'></a-sky> -->
-            <!-- <a-curvedimage src="#360" height="3.0" radius="5.7" theta-length="72"
-                 rotation="0 100 0" scale="0.8 0.8 0.8"></a-curvedimage> -->
-            <!-- <a-sky visible="false"  src="#360" radius="30"></a-sky> -->
-            <!-- <a-sphere color="yellow" radius="5"></a-sphere> -->
-            <!-- portal 360 with an image -->
-            <a-portal-door id='portal' url='img/360.jpeg' position='0 0 0' scale='0.5 0.5 0.5' rotation='-90 0 0'>
+
+        <a-marker markerhandler registerevents emitevents="true" id='mk' preset='custom' type='pattern'
+            url='marker/pattern-marker05.patt'>
+            <a-sphere src="#360" radius="30"></a-sphere>
+
+            <a-portal-door visible="true" id='portal' url='img/360.jpeg' position='0 0 0' scale='0.5 0.05 0.5'
+                rotation='-90 0 0'>
                 <!-- reset -->
-                <a-animation registerevents id='position0' attribute="position" delay="0" to="0 0 0"
-                dur="0" repeat="0" startEvents="markerfound"></a-animation>
-                <a-animation registerevents id='rotate0' attribute="rotation" delay="0" to="-90 0 0"
-                dur="0" repeat="0" startEvents="markerfound"></a-animation>
-                <a-animation registerevents id='scale0' attribute="scale" delay="0" to="0.5 0.05 0.5"
-                dur="0" repeat="0" startEvents="markerfound"></a-animation>
+                <a-animation registerevents emitevents="false" id='position0' attribute="position" delay="0" to="0 0 0"
+                    dur="0" repeat="0" begin="markerfound" end="markerlost"></a-animation>
                 <!-- reset -->
 
-                <a-animation registerevents id='scale1' attribute="scale" delay="0" from="0.5 0.05 0.5" to="0.5 0.5 0.5"
-                dur="1500" repeat="0" easing="ease-in-out" begin="markerfound"></a-animation>
+                <a-animation registerevents emitevents="false" id='scale1' attribute="scale" delay="0"
+                    from="0.5 0.05 0.5" to="0.5 0.5 0.5" dur="1500" repeat="0" easing="ease-in-out" begin="markerfound"
+                    end="markerlost"></a-animation>
 
-                <a-animation registerevents id='scale2' attribute="scale" delay="1500" from="0.5 0.5 0.5" to="5 5 5"
-                dur="1500" repeat="0" easing="ease-in-out" startEvents="markerfound"></a-animation>
+                <a-animation registerevents emitevents="false" id='scale2' attribute="scale" delay="3000"
+                    from="0.5 0.5 0.5" to="5 5 5" dur="2500" repeat="0" easing="ease-in-out" begin="markerfound"
+                    end="markerlost"></a-animation>
 
-                <a-animation registerevents emitevents="true" id='position1' attribute="position" delay="1500" from="0 0 0" to="0 -5 0"
-                dur="1500" repeat="0" easing="ease-in-out" startEvents="markerfound"></a-animation>
+                <a-animation registerevents emitevents="true" id='position1' attribute="position" delay="3000"
+                    from="0 0 0" to="0 0 5" dur="2500" repeat="0" easing="ease-in-out" begin="markerfound"
+                    end="markerlost"></a-animation>
 
-                <!-- <a-animation registerevents emitevents="true" id='rotate1' attribute="rotation" delay="1500" from="-90 0 0" to="0 0 0"
-                dur="1500" repeat="0" easing="ease-in-out" startEvents="markerfound"></a-animation> -->
-                
+
+
                 <a-portal-door>
-                    <!-- <a-entity link="href: index.html; title: My Homepage; image: #360; peekMode: false"></a-entity> -->
 
-                    <!-- portal 360 with an video -->
-                    <!-- <a-portal-door url='videos/pano.webm' position='0 0 0' scale='2 2 2' rotation='0 90 0'><a-portal-door> -->
-                    <!-- <a-portal-door url='videos/aframe-city-360.mp4' position='0 0 0' scale='2 2 2' rotation='0 90 0'><a-portal-door> -->
 
         </a-marker>
 
         <!-- Define a static camera -->
         <a-camera-static />
     </a-scene>
+    <!-- <script>
+        // Workaround for an AR.js bug (https://github.com/jeromeetienne/AR.js/issues/410)
+        const sceneEl = document.querySelector('a-scene');
+        sceneEl.addEventListener('loaded', () => {
+            sceneEl.camera = new THREE.PerspectiveCamera();
+        });
+    </script> -->
 
 
 </body>
