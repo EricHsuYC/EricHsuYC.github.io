@@ -7,7 +7,10 @@
 <!-- include aframe-portal-door -->
 <script src='src/aframe-portal-door.js'></script>
 <script src='src/threex-portal-door.js'></script>
+<!-- <script src="src/aframe-extras.grid.min.js"></script> -->
+
 <script>
+
     AFRAME.registerComponent('registerevents', {
         init: function () {
             var marker = this.el;
@@ -44,7 +47,7 @@
                 // console.log(mkp);
 
 
-                
+
 
                 // Stop animation
                 document.querySelector('#portal').emit('markerlost');
@@ -68,49 +71,45 @@
     <!-- add some info at the top of the page -->
 
     <!-- Define your 3d scene and enabled ar.js -->
-    <a-scene id="scene1" embedded arjs="patternRatio: 0.75; sourceType: webcam; debugUIEnabled: false;" vr-mode-ui="enabled: false">
+    <a-scene id="scene1" embedded arjs="patternRatio: 0.75; sourceType: webcam; debugUIEnabled: false;"
+        vr-mode-ui="enabled: false">
         <a-assets>
             <img id="360" src="img/360.jpeg">
         </a-assets>
 
-        <!-- <a-sky src="#360"></a-sky> -->
-        <!-- Create a anchor to attach your augmented reality -->
-        <a-marker markerhandler registerevents emitevents="true" id='mk' preset='custom' type='pattern' url='marker/pattern-marker.patt'>
-            <!-- <a-sky src='img/360.jpeg'></a-sky> -->
-            <!-- <a-curvedimage src="#360" height="3.0" radius="5.7" theta-length="72"
-                 rotation="0 100 0" scale="0.8 0.8 0.8"></a-curvedimage> -->
-            <a-sky visible="false" src="#360" radius="30"></a-sky>
-            <!-- <a-sphere color="yellow" radius="5"></a-sphere> -->
-            <!-- portal 360 with an image -->
-            <a-portal-door visible="true" id='portal' url='img/360.jpeg' position='0 0 0' scale='0.5 0.05 0.5' rotation='-90 0 0'>
+
+        <a-marker markerhandler registerevents emitevents="true" id='mk' preset='custom' type='pattern'
+            url='marker/pattern-marker.patt'>
+
+
+            <a-portal-door visible="true" id='portal' url='img/360.jpeg' position='0 0 0' scale='0.5 0.05 0.5'
+                rotation='-90 0 0'>
                 <!-- reset -->
-                <a-animation registerevents emitevents="false" id='position0' attribute="position" delay="0" to="0 0 0" dur="0" repeat="0"
-                    begin="markerfound" end="markerlost"></a-animation>
+                <a-animation registerevents emitevents="false" id='position0' attribute="position" delay="0" to="0 0 0"
+                    dur="0" repeat="0" begin="markerfound" end="markerlost"></a-animation>
                 <!-- reset -->
 
-                <a-animation registerevents emitevents="false" id='scale1' attribute="scale" delay="0" from="0.5 0.05 0.5" to="0.5 0.5 0.5"
-                    dur="1500" repeat="0" easing="ease-in-out" begin="markerfound" end="markerlost"></a-animation>
+                <a-animation registerevents emitevents="false" id='scale1' attribute="scale" delay="0"
+                    from="0.5 0.05 0.5" to="0.5 0.5 0.5" dur="1500" repeat="0" easing="ease-in-out" begin="markerfound"
+                    end="markerlost"></a-animation>
 
-                <a-animation registerevents emitevents="false" id='scale2' attribute="scale" delay="2000" from="0.5 0.5 0.5" to="5 5 5" dur="2000"
-                    repeat="0" easing="ease-in-out" begin="markerfound" end="markerlost"></a-animation>
+                <a-animation registerevents emitevents="false" id='scale2' attribute="scale" delay="3000"
+                    from="0.5 0.5 0.5" to="5 5 5" dur="2500" repeat="0" easing="ease-in-out" begin="markerfound"
+                    end="markerlost"></a-animation>
 
-                <a-animation registerevents emitevents="true" id='position1' attribute="position" delay="2000" from="0 0 0" to="0 0 5" dur="2000"
-                    repeat="0" easing="ease-in-out" begin="markerfound" end="markerlost"></a-animation>
+                <a-animation registerevents emitevents="true" id='position1' attribute="position" delay="3000"
+                    from="0 0 0" to="0 0 5" dur="2500" repeat="0" easing="ease-in-out" begin="markerfound"
+                    end="markerlost"></a-animation>
 
-                <!-- <a-animation registerevents emitevents="true" id='rotate1' attribute="rotation" delay="1500" from="-90 0 0" to="0 0 0"
-                dur="1500" repeat="0" easing="ease-in-out" begin="markerfound" end="markerlost"></a-animation> -->
+
 
                 <a-portal-door>
-                    <!-- <a-entity link="href: index.html; title: My Homepage; image: #360; peekMode: false"></a-entity> -->
 
-                    <!-- portal 360 with an video -->
-                    <!-- <a-portal-door url='videos/pano.webm' position='0 0 0' scale='2 2 2' rotation='0 90 0'><a-portal-door> -->
-                    <!-- <a-portal-door url='videos/aframe-city-360.mp4' position='0 0 0' scale='2 2 2' rotation='0 90 0'><a-portal-door> -->
 
         </a-marker>
 
         <!-- Define a static camera -->
-        <a-camera-static/>
+        <a-camera-static />
     </a-scene>
     <script>
             // Workaround for an AR.js bug (https://github.com/jeromeetienne/AR.js/issues/410)
