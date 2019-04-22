@@ -91,8 +91,8 @@
 <!-- start the body of your page -->
 
 <body style='margin : 0px; overflow: hidden;'>
-    <div class="help" style='position: absolute; top: 10px; width:100%; text-align: center'>
-        <p id="helptxt" style="color:#00b5e2;">Please aim at the marker</p>
+    <div class="help" style='position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;'>
+        <p id="helptxt" style="color:#00b5e2;  margin: auto">Please aim at the marker</p>
     </div>
     <img id="helpimg" src="img/focus.png" class="centerImage help" alt="CH Logo" height="120" width="120">
     <!-- add some info at the top of the page -->
@@ -122,7 +122,7 @@
             <!-- <a-sphere color="yellow" radius="5"></a-sphere> -->
             <!-- portal 360 with an image -->
 
-            <a-portal-door visible="true" id='portal' url='img/360.jpeg' position='0 0 0' scale='0.5 0.05 0.5'
+            <a-portal-door visible="true" id='portal' url='' position='0 0 0' scale='0.5 0.05 0.5'
                 rotation='-90 0 0'>
                 <!-- reset -->
                 <a-animation registerevents emitevents="false" id='position0' attribute="position" delay="0" to="0 0 0"
