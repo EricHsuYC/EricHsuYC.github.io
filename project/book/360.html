@@ -1,5 +1,8 @@
 <!-- include a-frame -->
 <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+<script src="src/aframe-look-at-component.min.js"></script>
+<script src="src/aframe-event-set-component.min.js"></script>
+
 <!-- include ar.js for aframe -->
 <!-- <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"> </script> -->
 <!-- <script src='src/aframe-ar.js'></script> -->
@@ -9,6 +12,49 @@
 <!-- <script src='src/threex-portal-door.js'></script> -->
 
 
+
+
+
+<script>
+
+    document.addEventListener('makevisible', function () {
+        console.log('123123213a');
+
+    });
+    // AFRAME.registerComponent('on-hover', {
+    //     schema: {
+    //         color: { default: 'red' }
+    //     },
+
+    //     init: function () {
+
+
+
+    //         this.el.sceneEl.addEventListener('mouseenter', function () {
+    //             console.log('123123213a');
+
+    //         });
+    //         // var data = this.data;
+    //         // var el = this.el;  // <a-box>
+    //         // var defaultColor = el.getAttribute('material').color;
+
+    //         // el.addEventListener('mouseenter', function () {
+    //         //     el.setAttribute('color', data.color);
+    //         // });
+
+    //         // el.addEventListener('mouseleave', function () {
+    //         //     el.setAttribute('color', defaultColor);
+    //         // });
+    //     }
+    // });
+</script>
+
+<script>
+
+
+
+</script>
+
 <!-- start the body of your page -->
 
 <body style='margin : 0px; overflow: hidden;'>
@@ -17,13 +63,32 @@
     <!-- Define your 3d scene and enabled ar.js -->
     <a-scene id="scene1">
         <a-assets>
-            <img id="360" src="img/360.jpg" >
+            <img id="poi2" src="img/POI2.png">
+            <img id="poi2-2" src="img/POI2-2.png">
+
+
+            <img id="360" src="img/360.jpg">
         </a-assets>
+        <a-image position="8.420 0.320 -18.6" scale="2 2 2" src="#poi2" look-at="#camera"
+            event-set__makevisible="_event: mouseenter; _target: #poi; visible: true; position: 0 1.2 0"></a-image>
+        <!-- <a-curvedimage src="#poi2-2" height="3.0" radius="5.7" theta-length="72" rotation="0 100 0" scale="0.8 0.8 0.8">
+        </a-curvedimage> -->
+        <a-curvedimage emitevents="false" id="poi" src="#poi2-2" visible="false" height="3.0" radius="5.7" theta-length="72"
+            rotation="0 100 0" position="0 -10 0" material=""
+            geometry="height:4.2;radius:9;thetaLength:25.14;thetaStart:41.5"
+            event-set__makevisible="_event: mouseleave; visible: false; position: 0 -10 0">
+            <a-animation registerevents emitevents="false" id='move' attribute="position" delay="0" from="0 1.2 0"
+                to="0 0.83927 0" dur="500" repeat="0" easing="ease-out" begin="mouseenter">
+            </a-animation>
+
+        </a-curvedimage>
 
         <a-sky src="#360" rotation='0 180 0'></a-sky>
-  
+
         <!-- Define a static camera -->
-        <a-camera fov="40"></a-camera>
+        <a-camera id="camera" fov="40">
+            <a-cursor></a-cursor>
+        </a-camera>
     </a-scene>
 
 
