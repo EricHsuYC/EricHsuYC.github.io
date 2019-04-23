@@ -30,7 +30,7 @@
         margin-top: -12.5vmin;
         margin-left: -12.5vmin;
         position: absolute;
-        top: 49vh;
+        top: 48vh;
         width: 25vmin;
         z-index: 1;
     }
@@ -41,7 +41,7 @@
             var marker = this.el;
             var a_count = 0;
             var mkp = 0;
-            console.log('initiate');
+            // console.log('initiate');
 
 
             // Register event that detected marker
@@ -128,7 +128,7 @@
 
             <a-curvedimage id="sph" geometry="primitive: sphere; radius: 45; thetaLength: 180; phiStart:290" pre
                 src="#360" height="3.0" radius="5.7" theta-length="72" rotation="0 100 0" scale="1 1 1">
-                <a-animation registerevents emitevents="false" id='scalex' attribute="scale" delay="0" from="0.1 1 1"
+                <a-animation registerevents emitevents="false" id='scalex' attribute="scale" delay="500" from="0.1 1 1"
                     to="1 1 1" dur="1500" repeat="0" easing="ease-in-out" begin="markerfound" end="markerlost">
                 </a-animation>
             </a-curvedimage>
@@ -136,21 +136,21 @@
             <!-- <a-sphere color="yellow" radius="5"></a-sphere> -->
             <!-- portal 360 with an image -->
 
-            <a-portal-door visible="true" id='portal' url='' position='0 0 0' scale='0.5 0.05 0.5' rotation='-90 0 0'>
+            <a-portal-door visible="true" id='portal' url='' position='0 0 0' scale='0.5 0.1 0.5' rotation='-90 0 0'>
                 <!-- reset -->
                 <a-animation registerevents emitevents="false" id='position0' attribute="position" delay="0" to="0 0 0"
                     dur="0" repeat="0" begin="markerfound" end="markerlost"></a-animation>
                 <!-- reset -->
 
-                <a-animation registerevents emitevents="false" id='scale1' attribute="scale" delay="0"
+                <a-animation registerevents emitevents="false" id='scale1' attribute="scale" delay="800"
                     from="0.5 0.1 0.5" to="0.5 0.5 0.5" dur="1500" repeat="0" easing="ease-in-out" begin="markerfound"
                     end="markerlost"></a-animation>
 
-                <a-animation registerevents emitevents="false" id='scale2' attribute="scale" delay="2000"
+                <a-animation registerevents emitevents="false" id='scale2' attribute="scale" delay="2800"
                     from="0.5 0.5 0.5" to="6 6 6" dur="1500" repeat="0" easing="ease-in-out" begin="markerfound"
                     end="markerlost"></a-animation>
 
-                <a-animation registerevents emitevents="true" id='position1' attribute="position" delay="2000"
+                <a-animation registerevents emitevents="true" id='position1' attribute="position" delay="2800"
                     from="0 0 0" to="0 0 6" dur="1500" repeat="0" easing="ease-in-out" begin="markerfound"
                     end="markerlost"></a-animation>
 
