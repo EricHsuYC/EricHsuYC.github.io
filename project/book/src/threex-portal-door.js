@@ -137,12 +137,22 @@ THREEx.Portal360.prototype._buildInsideMesh	= function(texture360, doorWidth, do
 	var radius360Sphere = 100
 	// var radius360Sphere = 1
 
-	var geometry = new THREE.SphereGeometry( radius360Sphere, 16, 16).rotateZ(Math.PI)
-	var material = new THREE.MeshBasicMaterial( {
-		map: texture360,
-		// opacity: 0.9,
-		side: THREE.DoubleSide,
-	});
+
+
+	//hide 360 sphere//
+
+	// var geometry = new THREE.SphereGeometry( radius360Sphere, 16, 16).rotateZ(Math.PI)
+	// var material = new THREE.MeshBasicMaterial( {
+	// 	map: texture360,
+	// 	// opacity: 0.9,
+	// 	side: THREE.DoubleSide,
+	// });
+	//hide 360 sphere//
+
+
+
+
+
 	// var material = new THREE.MeshNormalMaterial()
 
 
@@ -179,19 +189,29 @@ THREEx.Portal360.prototype._buildOutsideMesh = function(texture360, doorWidth, d
 	// var radius360Sphere = 1
 
 	// build half sphere geometry
-	var geometry = new THREE.SphereGeometry( radius360Sphere, 16, 16, Math.PI, Math.PI, 0, Math.PI).rotateZ(Math.PI)
-	// fix UVs
-	geometry.faceVertexUvs[0].forEach(function(faceUvs){
-		faceUvs.forEach(function(uv){
-			uv.x /= 2
-		})
-	})
-	geometry.uvsNeedUpdate = true
-	var material = new THREE.MeshBasicMaterial( {
-		map: texture360,
-		// opacity: 0.9,
-		side: THREE.BackSide,
-	});
+
+
+
+	//hide 360 sphere//
+
+	// var geometry = new THREE.SphereGeometry( radius360Sphere, 16, 16, Math.PI, Math.PI, 0, Math.PI).rotateZ(Math.PI)
+	// // fix UVs
+	// geometry.faceVertexUvs[0].forEach(function(faceUvs){
+	// 	faceUvs.forEach(function(uv){
+	// 		uv.x /= 2
+	// 	})
+	// })
+	// geometry.uvsNeedUpdate = true
+	// var material = new THREE.MeshBasicMaterial( {
+	// 	map: texture360,
+	// 	// opacity: 0.9,
+	// 	side: THREE.BackSide,
+	// });
+	//hide 360 sphere//
+
+
+
+
 	// var geometry = new THREE.SphereGeometry( radius360Sphere, 16, 16);
 	// var material = new THREE.MeshNormalMaterial()
 
