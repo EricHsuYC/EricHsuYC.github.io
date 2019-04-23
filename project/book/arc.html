@@ -65,7 +65,7 @@
 
                 console.log('animation ends');
                 a_count = a_count + 1;
-                if (a_count >= 4) {
+                if (a_count >= 5) {
                     window.location.href = "360.html";
                 };
 
@@ -76,10 +76,15 @@
             // Register events that have lost sight of markers
             marker.addEventListener('markerLost', function () {
                 var markerId = marker.id;
+                document.querySelector('#portal').emit('markerlost');
+                document.querySelector('#sph').emit('markerlost');
+
+
                 console.log('markerLost', markerId);
                 a_count = 0;
                 // document.getElementById("helptxt").style.visibility = "visible";
                 document.getElementById("helpimg").style.visibility = "visible";
+
                 // mkp = document.getElementById('mk').object3D.getWorldPosition();
                 // console.log(mkp);
 
@@ -128,7 +133,7 @@
 
             <a-curvedimage id="sph" geometry="primitive: sphere; radius: 45; thetaLength: 180; phiStart:290" pre
                 src="#360" height="3.0" radius="5.7" theta-length="72" rotation="0 100 0" scale="1 1 1">
-                <a-animation registerevents emitevents="false" id='scalex' attribute="scale" delay="500" from="0.1 1 1"
+                <a-animation registerevents emitevents="false" id='scalex' attribute="scale" delay="800" from="0.1 1 1"
                     to="1 1 1" dur="1500" repeat="0" easing="ease-in-out" begin="markerfound" end="markerlost">
                 </a-animation>
             </a-curvedimage>
@@ -140,6 +145,10 @@
                 <!-- reset -->
                 <a-animation registerevents emitevents="false" id='position0' attribute="position" delay="0" to="0 0 0"
                     dur="0" repeat="0" begin="markerfound" end="markerlost"></a-animation>
+                <a-animation registerevents emitevents="false" id='scale0' attribute="scale" delay="0"
+                    to="0.5 0.1 0.5" dur="0" repeat="0" begin="markerfound"
+                    end="markerlost"></a-animation>
+
                 <!-- reset -->
 
                 <a-animation registerevents emitevents="false" id='scale1' attribute="scale" delay="800"

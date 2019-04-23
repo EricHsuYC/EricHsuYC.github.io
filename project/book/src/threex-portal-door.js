@@ -144,10 +144,15 @@ THREEx.Portal360.prototype._buildInsideMesh	= function(texture360, doorWidth, do
 		side: THREE.DoubleSide,
 	});
 	// var material = new THREE.MeshNormalMaterial()
-	var sphere360Mesh = new THREE.Mesh( geometry, material );
-	sphere360Mesh.position.z = -0.1
-	sphere360Mesh.rotation.y = Math.PI
-	doorInsideCenter.add(sphere360Mesh)
+
+
+
+
+	//hide 360 sphere
+	// var sphere360Mesh = new THREE.Mesh( geometry, material );
+	// sphere360Mesh.position.z = -0.1
+	// sphere360Mesh.rotation.y = Math.PI
+	// doorInsideCenter.add(sphere360Mesh)
 	
 	return doorInsideCenter
 }
@@ -189,9 +194,13 @@ THREEx.Portal360.prototype._buildOutsideMesh = function(texture360, doorWidth, d
 	});
 	// var geometry = new THREE.SphereGeometry( radius360Sphere, 16, 16);
 	// var material = new THREE.MeshNormalMaterial()
-	var sphere360Mesh = new THREE.Mesh( geometry, material );
-	sphere360Mesh.position.z = -0.1
-	doorOutsideCenter.add(sphere360Mesh)
+
+
+
+	//hide 360 sphere//
+	// var sphere360Mesh = new THREE.Mesh( geometry, material );
+	// sphere360Mesh.position.z = -0.1
+	// doorOutsideCenter.add(sphere360Mesh)
 	
 	return doorOutsideCenter
 }
