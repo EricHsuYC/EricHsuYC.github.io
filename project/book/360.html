@@ -1,5 +1,5 @@
 <!-- include a-frame -->
-<script src="src/0.9/aframe.min.js"></script>
+<script src="src/aframe.min.js"></script>
 <script src="src/aframe-look-at-component.min.js"></script>
 <script src="src/aframe-event-set-component.min.js"></script>
 
@@ -44,7 +44,7 @@
 
         <!-- Define a static camera -->
         <!-- <a-entity id="camera-container" rotation="0 -30 0"> -->
-        <a-entity camera look-controls>
+        <a-entity position="0 0 0" camera look-controls>
             <a-entity cursor="fuse: false; fuseTimeout: 500" position="0 0 -1" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
                 material="color: #00b5e2; shader: flat">
             </a-entity>
