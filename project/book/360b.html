@@ -1,0 +1,79 @@
+
+
+<!-- include a-frame -->
+<script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+<script src="src/aframe-look-at-component.min.js"></script>
+<script src="src/aframe-event-set-component.min.js"></script>
+
+<!-- include ar.js for aframe -->
+<!-- <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"> </script> -->
+<!-- <script src='src/aframe-ar.js'></script> -->
+<!-- <script>ARjs.Context.baseURL = 'src/three.js'</script> -->
+<!-- include aframe-portal-door -->
+<!-- <script src='src/aframe-portal-door.js'></script> -->
+<!-- <script src='src/threex-portal-door.js'></script> -->
+
+<script>
+    document.addEventListener('mouseenter', function () {
+        console.log('mouseenter');
+
+    });
+    document.addEventListener('mouseleave', function () {
+        console.log('mouseleave');
+
+    });
+</script>
+
+<!-- start the body of your page -->
+
+<body style='margin : 0px; overflow: hidden;'>
+    <!-- add some info at the top of the page -->
+
+    <!-- Define your 3d scene and enabled ar.js -->
+    <a-scene id="scene1">
+        <a-assets>
+            <img id="poi2" src="img/POI2.png">
+            <img id="poi2-2" src="img/POI2-2.png">
+
+            <img id="360" src="img/putiA2.jpg">
+
+        </a-assets>
+        <a-image id="poi1" position="8.420 0.320 -18.6" scale="3 3 3" src="#poi2" look-at="#camera"
+            event-set__makevisible="_event: mouseenter; _target: #poi; visible: true; position: 0 1.3 0; _delay: 0"
+            event-set__move="_event: mouseenter; visible: false; position: 0 -100 0"></a-image>
+        <!-- <a-curvedimage src="#poi2-2" height="3.0" radius="5.7" theta-length="72" rotation="0 100 0" scale="0.8 0.8 0.8">
+        </a-curvedimage> -->
+        <a-curvedimage emitevents="false" id="poi" src="#poi2-2" visible="false" height="3.0" radius="5.7"
+            theta-length="72" rotation="0 100 0" position="0 -10 0" material=""
+            geometry="height:7.6;radius:9;thetaLength:48.6;thetaStart:31.2"
+            event-set__makevisible="_event: mouseleave; visible: false; position: 0 -100 0; _delay: 0"
+
+            event-set__move="_event: mouseleave;  _target: #poi1; visible: true; position: 8.420 0.320 -18.6; _delay: 0"
+            animation__mouseenter="property: position; from: 0 1.3 0; to: 0 0.83927 0; startEvents: mouseenter; dur: 300; easing: easeOutQuad; delay:0; repeat:0">
+
+            <!-- <a-animation registerevents emitevents="false" id='move' attribute="position" delay="0" from="0 1.3 0"
+                to="0 0.83927 0" dur="750" repeat="0" easing="ease-out" startEvents="mouseenter">
+            </a-animation> -->
+
+        </a-curvedimage>
+
+        <a-sky src="#360" rotation='0 180 0'></a-sky>
+
+        <!-- Define a static camera -->
+        <!-- <a-entity id="camera-container" rotation="0 -30 0"> -->
+        <a-entity id="rig" rotation="0 -30 0">
+            <a-camera id="camera" position="0 0 0" fov="50">
+                <a-entity cursor="fuse: false; fuseTimeout: 500" position="0 0 -1"
+                    geometry="primitive: ring; radiusInner: 0.01; radiusOuter: 0.015"
+                    material="color: #00b5e2; shader: flat">
+                </a-entity>
+            </a-camera>
+        </a-entity>
+        <!-- <a-camera look-controls id="camera" fov="50">
+            <a-cursor scale="0.5 0.5 0.5" color="#00b5e2"></a-cursor>
+        </a-camera> -->
+        <!-- </a-entity> -->
+    </a-scene>
+
+
+</body>
