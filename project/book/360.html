@@ -31,6 +31,7 @@
 <!-- start the body of your page -->
 
 <body style='margin : 0px; overflow: hidden;'>
+    <iframe src="silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
     <!-- add some info at the top of the page -->
 
     <!-- Define your 3d scene and enabled ar.js -->
@@ -79,9 +80,9 @@
         </a-camera> -->
         <!-- </a-entity> -->
     </a-scene>
-    <!-- <audio id="myAudio" autoplay>
-        <source src="intro.mp3" type="audio/mpeg">
-    </audio> -->
+    <audio id="player" autoplay loop>
+        <source src="speech.mp3" type="audio/mp3">
+    </audio>
 
 
 
