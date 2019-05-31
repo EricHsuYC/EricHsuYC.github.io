@@ -38,7 +38,7 @@
         <a-assets>
             <img id="poi2" src="img/POI2.png">
             <img id="poi2-2" src="img/POI2-2.png">
-
+            <audio id="intro" src="intro.mp3" preload="auto"></audio>
             <img id="360" src="img/360.jpg">
 
         </a-assets>
@@ -61,7 +61,8 @@
         </a-curvedimage>
 
         <a-sky src="#360" rotation='0 180 0'></a-sky>
-        <a-sound src="src: url(intro.mp3)" autoplay="true" position="0 2 5" volume="10"></a-sound>
+        <!-- <a-sound src="src: url(intro.mp3)" autoplay="true" position="0 2 5" volume="10"></a-sound> -->
+        <a-entity sound="src: #intro"></a-entity>
 
         <!-- Define a static camera -->
         <!-- <a-entity id="camera-container" rotation="0 -30 0"> -->
