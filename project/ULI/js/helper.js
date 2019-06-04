@@ -8,16 +8,13 @@ AFRAME.registerComponent('hotspot-helper', {
   },
 
   init: function () {
-    if (!this.data.target) {
-      console.error('Hotspot-helper: You must specify a target element!');
-      return;
-    }
+
 
     var self = this;
 
     this.camera = document.querySelector('[camera]');
-    this.targetRotationOrigin = this.data.target.getAttribute('rotation');
-    this.targetPositionOrigin = this.data.target.getAttribute('position');
+    this.targetRotationOrigin = 0,0,0;
+    this.targetPositionOrigin = 0,0,0;
 
     // Helper UI.
     var uiContainer = this.makeUi();
@@ -68,7 +65,6 @@ AFRAME.registerComponent('hotspot-helper', {
     this.updateDistance(this.data.distance);
 
     // Set positioning on target so that clicks are not triggered when placing hotspot.
-    this.data.target.setAttribute('hotspot', {positioning: true});
   },
 
   makeUi: function () {

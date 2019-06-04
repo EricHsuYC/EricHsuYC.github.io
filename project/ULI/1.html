@@ -9,23 +9,24 @@
 
     <!-- <script src="src/0.9/aframe.min.js"></script> -->
 
-    <!-- <script src="js/hotspot.js"></script> -->
+    <script src="js/helper.js"></script>
     <!-- <script src="https://unpkg.com/aframe-event-set-component@5/dist/aframe-event-set-component.min.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aframe-layout-component@5.3.0/dist/aframe-layout-component.min.js"></script>
-    <!-- <script src="https://unpkg.com/aframe-template-component@3.2.1/dist/aframe-template-component.min.js"></script> -->
-    <script src="https://unpkg.com/aframe-proxy-event-component@2.1.0/dist/aframe-proxy-event-component.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- <script src="https://unpkg.com/aframe-layout-component@5.3.0/dist/aframe-layout-component.min.js"></script> -->
+    <script src="https://unpkg.com/aframe-template-component@3.2.1/dist/aframe-template-component.min.js"></script>
+    <script
+        src="https://unpkg.com/aframe-proxy-event-component@2.1.0/dist/aframe-proxy-event-component.min.js"></script>
     <script src="src/aframe-look-at-component.min.js"></script>
     <script src="src/aframe-event-set-component.min.js"></script>
 
     <script>
-        var curScene = 1;
+        var lastSceneId = 5;
+        var curScene = 0;
         document.addEventListener('mouseenter', function () {
             console.log('mouseenter');
 
         });
-
 
 
 
@@ -38,26 +39,38 @@
         // });
 
 
-        // AFRAME.registerComponent('display-poi', {
-        //     init: function () {
-        //         // Solution for Handling Events.
-        //         var sceneEl = document.querySelector('a-scene');
-        //         var allLink = sceneEl.querySelector('.tlinks');
 
-        //         allLink.addEventListener('click', function () {
-        //             alert("123123");
-        //             console.log('GGGG');
-        //         });
-        //     }
-        // });
+
+        AFRAME.registerComponent('display', {
+            init: function () {
+                console.log('display method is woking!');
+                var sceneEl = document.querySelector('a-scene');
+                var allLink = sceneEl.querySelectorAll('.links');
+                for (var i = 0; i < allLink.length; i++) {
+                    allLink[i].addEventListener('click', function () {
+                        var linkid = this.getAttribute('id');
+                        console.log('link is clicked');
+                        console.log(linkid);
+
+
+                    });
+                };
+
+
+            },
+
+            tick: function () {
+                // Don't call query selector in here, query beforehand.
+
+            }
+        });
 
     </script>
 </head>
 
 <body style='margin : 0px; overflow: hidden;'>
 
-    <a-scene>
-
+    <a-scene display>
         <a-assets>
             <img id="poi2" crossorigin="anonymous" src="img/amp.png">
             <img id="poi2-2" crossorigin="anonymous" src="img/POI2-2.png">
@@ -66,26 +79,31 @@
 
 
 
-            <img id="city" crossorigin="anonymous" src="rol/rol_st1.jpg">
-            <img id="city-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
-            <img id="cubes-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-cubes.jpg">
-            <img id="sechelt-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-sechelt.jpg">
-            <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
-            <img id="cubes" crossorigin="anonymous" src="rol/rol_st3.jpg">
-            <img id="sechelt" crossorigin="anonymous" src="rol/rol_st4.jpg">
+            <img id="0" crossorigin="anonymous" src="img/VR room.jpg">
+
+            <img id="1" crossorigin="anonymous" src="rol/rol_st1.jpg">
+            <img id="city-thumb" crossorigin="anonymous"
+                src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
+            <img id="cubes-thumb" crossorigin="anonymous"
+                src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-cubes.jpg">
+            <img id="sechelt-thumb" crossorigin="anonymous"
+                src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-sechelt.jpg">
+            <audio id="click-sound" crossorigin="anonymous"
+                src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
+            <img id="2" crossorigin="anonymous" src="rol/rol_st3.jpg">
+            <img id="3" crossorigin="anonymous" src="rol/rol_st4.jpg">
 
             <!-- template for Link / Portal. -->
             <script id="tlinks" type="text/html">
-            <a-entity id="#${id}" class="tlinks"
+            <a-entity id="${id}" class="links ${clss}"
               position="${pos}"
               geometry="primitive: plane; height: 1; width: 1"
               material="shader: flat; src: ${thumb}"
               look-at="#camera"
               event-set__mouseenter="scale: 1.2 1.2 1"
               event-set__mouseleave="scale: 1 1 1"
-              event-set__click="_target: #image-360; _delay: 300; material.src: ${src}"
+              event-set__click="_target: #image-360; _delay: 300; material.src: ${target}"
               proxy-event="event: click; to: #image-360; as: fade"
-              event-set__hide="_event: click; _target: .tpois; visible: false; _delay: 0"
               sound="on: click; src: #click-sound"></a-entity>
             </script>
 
@@ -93,7 +111,7 @@
 
             <!-- template for POI -->
             <script id="tpois" type="text/html">
-                <a-image class="tpois" position="${pos}" scale="0.3 0.3 0.3" src="#poi2" look-at="#camera"
+                <a-image id="${id}" class="pois ${clss}" position="${pos}" scale="0.3 0.3 0.3" src="#poi2" look-at="#camera"
                 event-set__makevisible="_event: mouseenter; _delay: 0; material.src: ${panel}; scale: ${scale}"
                 event-set__changeback="_event: mouseleave; material.src: #poi2; scale: 0.3 0.3 0.3; _delay: 30"
 
@@ -105,37 +123,51 @@
 
 
         <!-- working test poi -->
-        <a-image id="1-1" position="2 2 2" scale="1 1 1" src="#poi2" look-at="#camera" event-set__makevisible="_event: mouseenter; _delay: 0; material.src: #poi2-2; scale: 2 2 2"
-            event-set__changeback="_event: mouseleave; material.src: #poi2; scale: 1 1 1; _delay: 30" animation__fade="property: components.material.material.opacity; from: 0; to: 1; dur: 300; startEvents: mouseenter">
-        </a-image>
+        <!-- <a-image id="1-1" position="2 2 2" scale="1 1 1" src="#poi2" look-at="#camera"
+            event-set__makevisible="_event: mouseenter; _delay: 0; material.src: #poi2-2; scale: 2 2 2"
+            event-set__changeback="_event: mouseleave; material.src: #poi2; scale: 1 1 1; _delay: 30"
+            animation__fade="property: components.material.material.opacity; from: 0; to: 1; dur: 300; startEvents: mouseenter">
+        </a-image> -->
 
 
 
 
 
         <!-- 360-degree image. -->
-        <a-sky id="image-360" src="#city" animation__fade="property: components.material.material.color; type: color; from: #FFF; to: #000; dur: 300; startEvents: fade"
+        <a-sky id="image-360" src="#1"
+            animation__fade="property: components.material.material.color; type: color; from: #FFF; to: #000; dur: 300; startEvents: fade"
             animation__fadeback="property: components.material.material.color; type: color; from: #000; to: #FFF; dur: 300; startEvents: animationcomplete__fade">
         </a-sky>
 
 
         <!-- poi generated by template -->
-        <a-entity template="src: #tpois" data-pos="1 1 2" data-scale="1.5 1 1" data-panel="#poi6-2"></a-entity>
-        <a-entity template="src: #tpois" data-pos="2 1 2" data-scale="1.5 1 1" data-panel="#poi6-2"></a-entity>
+        <a-entity template="src: #tpois" data-id="1" data-clss="1" data-pos="1 1 2" data-scale="1.5 1 1"
+            data-panel="#poi6-2"></a-entity>
+        <a-entity template="src: #tpois" data-id="2" data-clss="2" data-pos="2 1 2" data-scale="1.5 1 1"
+            data-panel="#poi6-2"></a-entity>
 
 
         <!-- Portal generate by template -->
         <!-- <a-entity id="links" layout="type: line; margin: 1.5" position="0 -1 -4"></a-entity> -->
-        <a-entity data-pos="-1 0 -4" template="src: #tlinks" data-id="AtoB" data-src="#cubes" data-thumb="#cubes-thumb"></a-entity>
-        <a-entity data-pos="-2 0 -4" template="src: #tlinks" data-id="BtoC" data-src="#city" data-thumb="#city-thumb"></a-entity>
-        <a-entity data-pos="-3 0 -4" template="src: #tlinks" data-id="CtoD" data-src="#sechelt" data-thumb="#sechelt-thumb"></a-entity>
+        <a-entity data-pos="-1 0 -4" template="src: #tlinks" data-id="rol-0" data-clss="0" data-target="#1"
+            data-thumb="#cubes-thumb">
+        </a-entity>
+        <a-entity data-pos="-1 0 -4" template="src: #tlinks" data-id="rol-1" data-clss="1" data-target="#2"
+            data-thumb="#cubes-thumb">
+        </a-entity>
+        <a-entity data-pos="-2 0 -4" template="src: #tlinks" data-id="rol-2" data-clss="2" data-target="#3"
+            data-thumb="#city-thumb">
+        </a-entity>
+        <a-entity data-pos="-3 0 -4" template="src: #tlinks" data-id="rol-3" data-clss="3" data-target="#sechelt"
+            data-thumb="#sechelt-thumb"></a-entity>
         <!-- </a-entity> -->
 
         <!-- Camera + cursor. -->
 
         <a-entity id="rig" rotation="0 -30 0">
             <a-camera id="camera" position="0 0 0" fov="50">
-                <a-entity cursor="fuse: false; fuseTimeout: 500" position="0 0 -1" geometry="primitive: ring; radiusInner: 0.01; radiusOuter: 0.015"
+                <a-entity cursor="fuse: false; fuseTimeout: 500" position="0 0 -1"
+                    geometry="primitive: ring; radiusInner: 0.01; radiusOuter: 0.015"
                     material="color: #00b5e2; shader: flat">
                 </a-entity>
             </a-camera>
