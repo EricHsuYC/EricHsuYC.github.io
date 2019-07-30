@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>360&deg; to YP</title>
+    <meta name="description" content="360&deg; to YP">
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+
+    <!-- <script src="src/0.9/aframe.min.js"></script> -->
+
+    <script src="js/poi-helper.js"></script>
+
+
+    <!-- <script src="https://unpkg.com/aframe-event-set-component@5/dist/aframe-event-set-component.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aframe-proxy-event-component@2.1.0/dist/aframe-proxy-event-component.min.js"></script>
+    <script src="src/aframe-look-at-component.min.js"></script>
+    <script src="src/aframe-event-set-component.min.js"></script>
+
+</head>
+
+<script>
+
+
+
+    AFRAME.registerComponent('display', {
+        init: function () {
+            console.log('display method is woking!');
+            var sceneEl = document.querySelector('a-scene');
+
+            // how to generate array omg..
+            var ar = new Array("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "17", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27");
+            function shuffle(array) {
+                var currentIndex = array.length, temporaryValue, randomIndex;
+
+                // While there remain elements to shuffle...
+                while (0 !== currentIndex) {
+
+                    // Pick a remaining element...
+                    randomIndex = Math.floor(Math.random() * currentIndex);
+                    currentIndex -= 1;
+
+                    // And swap it with the current element.
+                    temporaryValue = array[currentIndex];
+                    array[currentIndex] = array[randomIndex];
+                    array[randomIndex] = temporaryValue;
+                }
+
+                return array;
+            }
+
+            // it works :)
+            ar = shuffle(ar);
+            index = 0;
+
+            console.log(ar);
+
+            //end of array code
+
+            var msg = sceneEl.querySelector('#msg');
+            console.log(msg);
+
+
+            msg.addEventListener('click', function () {
+                console.log("msg clicked");
+
+
+                index = index + 1;
+
+                //下個場景是哪個
+                this.setAttribute('src', "msg/" + index + ".png");
+
+
+
+            });
+
+
+
+        },
+
+        tick: function () {
+            // Don't call query selector in here, query beforehand.
+
+        }
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+<body style='margin : 0px; overflow: hidden;'>
+
+    <body style='margin : 0px; overflow: hidden;'>
+        <!-- <input type="text" value="0" id="myInput" display="none"> -->
+
+        <a-scene display>
+            <a-assets>
+                <img id="poi" crossorigin="anonymous" src="msg/6.png">
+                <img id="360" crossorigin="anonymous" src="img/360.jpg">
+            </a-assets>
+
+            <a-sky id="image-360" src="#360">
+            </a-sky>
+            <a-image id="msg" position="-0.62 -0.66 2.86" scale="2.13 1.2 1" src="#poi" look-at="#camera" crossorigin="anonymous" event-set__move="_event: mouseleave;"></a-image>
+            <!-- <a-entity crossorigin="anonymous" cubemap="folder: /img/360/"></a-entity> -->
+            <a-entity id="rig" rotation="0 0 0">
+                <a-camera id="camera" position="0 0 0" fov="50" look-controls>
+                    <a-entity cursor="fuse: true; fuseTimeout: 1000" position="0 0 -1" scale="1 1 1" geometry="primitive: ring; radiusInner: 0.01; radiusOuter: 0.015"
+                        material="color: #00b5e2; shader: flat" animation__fuseout="property: scale; to: 1 1 1; startEvents: click; dur: 300"
+                        animation__fuseout2="property: scale; to: 1 1 1; startEvents: mouseleave; dur: 300" animation__fusein="property: scale; to: 0.3 0.3 0.3; startEvents: fusing; dur: 1000">
+                    </a-entity>
+                </a-camera>
+            </a-entity>
+        </a-scene>
+    </body>
+
+</html>
