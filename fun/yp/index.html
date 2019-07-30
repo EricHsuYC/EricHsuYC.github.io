@@ -5,16 +5,16 @@
     <meta charset="utf-8">
     <title>360&deg; to YP</title>
     <meta name="description" content="360&deg; to YP">
-    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+    <!-- <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script> -->
 
-    <!-- <script src="src/0.9/aframe.min.js"></script> -->
+    <script src="src/0.9/aframe.min.js"></script>
 
     <script src="js/poi-helper.js"></script>
 
 
     <!-- <script src="https://unpkg.com/aframe-event-set-component@5/dist/aframe-event-set-component.min.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script> -->
 
     <script src="https://unpkg.com/aframe-proxy-event-component@2.1.0/dist/aframe-proxy-event-component.min.js"></script>
     <script src="src/aframe-look-at-component.min.js"></script>
@@ -110,13 +110,13 @@
 
         <a-scene display>
             <a-assets>
-                <img id="poi" crossorigin="anonymous" src="msg/6.png">
-                <img id="360" crossorigin="anonymous" src="img/360.jpg">
+                <!-- <img id="poi" crossorigin="anonymous" src="msg/6.png"> -->
+                <!-- <img id="360" crossorigin="anonymous" src="img/360.jpg"> -->
             </a-assets>
 
-            <a-sky id="image-360" src="#360">
+            <a-sky id="image-360" src="img/360.jpg">
             </a-sky>
-            <a-image id="msg" position="-0.62 -0.66 2.86" scale="2.13 1.2 1" src="#poi" look-at="#camera" crossorigin="anonymous" event-set__move="_event: mouseleave;"></a-image>
+            <a-image id="msg" position="-0.62 -0.66 2.86" scale="2.13 1.2 1" src="msg/6.png" look-at="#camera" crossorigin="anonymous" event-set__move="_event: mouseleave;"></a-image>
             <!-- <a-entity crossorigin="anonymous" cubemap="folder: /img/360/"></a-entity> -->
             <a-entity id="rig" rotation="0 0 0">
                 <a-camera id="camera" position="0 0 0" fov="50" look-controls>
