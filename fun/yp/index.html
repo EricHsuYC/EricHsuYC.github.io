@@ -121,11 +121,11 @@
             </a-sky>
             <a-image id="msg" position="-0.62 -0.66 2.86" scale="2.13 1.2 1" src="msg/0.png" look-at="#camera" crossorigin="anonymous" event-set__move="_event: mouseleave;"></a-image>
             <!-- <a-entity crossorigin="anonymous" cubemap="folder: /img/360/"></a-entity> -->
-            <a-entity id="rig" rotation="0 0 0">
+            <a-entity id="rig" rotation="0 180 0">
                 <a-camera id="camera" position="0 0 0" fov="50" look-controls>
-                    <a-entity cursor="fuse: true; fuseTimeout: 1000" position="0 0 -1" scale="1 1 1" geometry="primitive: ring; radiusInner: 0.01; radiusOuter: 0.015"
+                    <a-entity cursor="fuse: true; fuseTimeout: 700" position="0 0 -1" scale="1 1 1" geometry="primitive: ring; radiusInner: 0.01; radiusOuter: 0.015"
                         material="color: #00b5e2; shader: flat" animation__fuseout="property: scale; to: 1 1 1; startEvents: click; dur: 300"
-                        animation__fuseout2="property: scale; to: 1 1 1; startEvents: mouseleave; dur: 300" animation__fusein="property: scale; to: 0.3 0.3 0.3; startEvents: fusing; dur: 1000">
+                        animation__fuseout2="property: scale; to: 1 1 1; startEvents: mouseleave; dur: 300" animation__fusein="property: scale; to: 0.3 0.3 0.3; startEvents: fusing; dur: 700">
                     </a-entity>
                 </a-camera>
             </a-entity>
