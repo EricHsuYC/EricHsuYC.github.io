@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>360&deg; to YP</title>
-    <meta name="description" content="360&deg; to YP">
+    <title>to YP的360&deg; 祝福</title>
+    <meta name="description" content="to YP的360&deg; 祝福">
     <!-- <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script> -->
 
     <script src="src/0.9/aframe.min.js"></script>
@@ -32,7 +32,7 @@
             var sceneEl = document.querySelector('a-scene');
 
             // how to generate array omg..
-            var ar = new Array("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "17", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27");
+            var ar = new Array("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "17", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27");
             function shuffle(array) {
                 var currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -69,6 +69,9 @@
 
 
                 index = index + 1;
+                if (index > 27){
+                    index = 0;
+                };
 
                 //下個場景是哪個
                 this.setAttribute('src', "msg/" + index + ".png");
@@ -111,12 +114,12 @@
         <a-scene display>
             <a-assets>
                 <!-- <img id="poi" crossorigin="anonymous" src="msg/6.png"> -->
-                <!-- <img id="360" crossorigin="anonymous" src="img/360.jpg"> -->
+                <img id="360" crossorigin="anonymous" src="img/360.jpg">
             </a-assets>
 
             <a-sky id="image-360" src="img/360.jpg">
             </a-sky>
-            <a-image id="msg" position="-0.62 -0.66 2.86" scale="2.13 1.2 1" src="msg/6.png" look-at="#camera" crossorigin="anonymous" event-set__move="_event: mouseleave;"></a-image>
+            <a-image id="msg" position="-0.62 -0.66 2.86" scale="2.13 1.2 1" src="msg/0.png" look-at="#camera" crossorigin="anonymous" event-set__move="_event: mouseleave;"></a-image>
             <!-- <a-entity crossorigin="anonymous" cubemap="folder: /img/360/"></a-entity> -->
             <a-entity id="rig" rotation="0 0 0">
                 <a-camera id="camera" position="0 0 0" fov="50" look-controls>
