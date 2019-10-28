@@ -118,10 +118,10 @@ function render() {
 }
 
 function createLayer(stage, view, geometry, eye, rect) {
-  var urlPrefix = "//www.marzipano.net/media/music-room";
-  var source = new Marzipano.ImageUrlSource.fromString(
-    urlPrefix + "/" + eye + "/{z}/{f}/{y}/{x}.jpg",
-    { cubeMapPreviewUrl: urlPrefix + "/" + eye + "/preview.jpg" });
+  var urlPrefix = "tiles";
+  var source = Marzipano.ImageUrlSource.fromString(
+    urlPrefix + "/" + data.id + "/{z}/{f}/{y}/{x}.jpg",
+    { cubeMapPreviewUrl: urlPrefix + "/" + data.id + "/preview.jpg" });
 
   var textureStore = new Marzipano.TextureStore(source, stage);
   var layer = new Marzipano.Layer(source, geometry, view, textureStore,
