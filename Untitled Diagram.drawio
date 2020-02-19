@@ -1,6 +1,6 @@
-<mxfile host="www.draw.io" modified="2020-02-19T09:15:37.669Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36" etag="kKOezThyfM72FBA_m4dN" version="12.7.2" type="github">
+<mxfile host="www.draw.io" modified="2020-02-19T09:18:01.426Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36" etag="uZN_VUqf9WTN6CU7ioHt" version="12.7.2" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="920" dy="1550" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0" extFonts="Roboto^https://fonts.googleapis.com/css?family=Roboto">
+    <mxGraphModel dx="767" dy="1292" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0" extFonts="Roboto^https://fonts.googleapis.com/css?family=Roboto">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -27,7 +27,7 @@
         </mxCell>
         <mxCell id="-8byVdPDyk2Qr70N4ybH-27" value="2-points" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontFamily=Roboto;fontSize=24;fontColor=#434B54;" vertex="1" connectable="0" parent="-8byVdPDyk2Qr70N4ybH-26">
           <mxGeometry x="-0.1245" y="-51" relative="1" as="geometry">
-            <mxPoint x="44.08" y="-11" as="offset" />
+            <mxPoint x="43.75" y="-1" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="-8byVdPDyk2Qr70N4ybH-33" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startFill=0;endArrow=block;endFill=1;strokeColor=#B3B3B3;strokeWidth=4;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4xVDAsTEALw9DUcqADvd-16" target="-8byVdPDyk2Qr70N4ybH-30">
@@ -54,7 +54,7 @@
           <mxGeometry x="520" y="1169" width="290" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-8byVdPDyk2Qr70N4ybH-30" value="&lt;font color=&quot;#434b54&quot; face=&quot;Roboto&quot;&gt;&lt;span style=&quot;font-size: 24px&quot;&gt;Enable AR&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#96D2E7;strokeColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="170" y="1200" width="163" height="60" as="geometry" />
+          <mxGeometry x="190" y="1169" width="163" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-8byVdPDyk2Qr70N4ybH-43" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startFill=0;endArrow=block;endFill=1;strokeColor=#B3B3B3;strokeWidth=4;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-8byVdPDyk2Qr70N4ybH-38" target="-8byVdPDyk2Qr70N4ybH-42">
           <mxGeometry relative="1" as="geometry" />
@@ -70,14 +70,26 @@
         </mxCell>
         <mxCell id="-8byVdPDyk2Qr70N4ybH-47" value="Re-select" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontSize=24;fontFamily=Roboto;fontColor=#434B54;" vertex="1" connectable="0" parent="-8byVdPDyk2Qr70N4ybH-46">
           <mxGeometry x="0.0681" y="2" relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="2.14" y="-57" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="-8byVdPDyk2Qr70N4ybH-38" value="" style="rhombus;whiteSpace=wrap;html=1;rounded=0;comic=0;strokeColor=none;fillColor=#CCCCCC;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="604.25" y="1289" width="121.5" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="-8byVdPDyk2Qr70N4ybH-42" value="&lt;font color=&quot;#434b54&quot; face=&quot;Roboto&quot;&gt;&lt;span style=&quot;font-size: 24px&quot;&gt;Pick 2 points in 3D view&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#96D2E7;strokeColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="520" y="1429" width="290" height="60" as="geometry" />
+        <mxCell id="-8byVdPDyk2Qr70N4ybH-49" value="" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;startFill=0;endArrow=block;endFill=1;strokeColor=#B3B3B3;strokeWidth=4;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-8byVdPDyk2Qr70N4ybH-42" target="-8byVdPDyk2Qr70N4ybH-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-8byVdPDyk2Qr70N4ybH-42" value="&lt;font color=&quot;#434b54&quot; face=&quot;Roboto&quot;&gt;&lt;span style=&quot;font-size: 24px&quot;&gt;&amp;nbsp; &amp;nbsp; Scan for cloud points &amp;amp; planes&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#96D2E7;strokeColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="480" y="1420" width="370" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-8byVdPDyk2Qr70N4ybH-53" value="" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;startFill=0;endArrow=block;endFill=1;strokeColor=#B3B3B3;strokeWidth=4;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-8byVdPDyk2Qr70N4ybH-48" target="-8byVdPDyk2Qr70N4ybH-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-8byVdPDyk2Qr70N4ybH-48" value="&lt;font color=&quot;#434b54&quot; face=&quot;Roboto&quot;&gt;&lt;span style=&quot;font-size: 24px&quot;&gt;Pick 2 points on plane&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#96D2E7;strokeColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="520" y="1530" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-8byVdPDyk2Qr70N4ybH-52" value="&lt;font color=&quot;#434b54&quot; face=&quot;Roboto&quot;&gt;&lt;span style=&quot;font-size: 24px&quot;&gt;View AR model&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#96D2E7;strokeColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="520" y="1640" width="290" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
