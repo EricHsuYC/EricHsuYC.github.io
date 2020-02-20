@@ -1,6 +1,6 @@
-<mxfile host="www.draw.io" modified="2020-02-20T07:12:21.861Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36" etag="ajjG0vdoYO0IoWaGLGKZ" version="12.7.2" type="github">
+<mxfile host="www.draw.io" modified="2020-02-20T07:16:27.856Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36" etag="Kb0dwhaZ73hi1R5l0E3Z" version="12.7.2" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="10848" dy="4094" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0" extFonts="Roboto^https://fonts.googleapis.com/css?family=Roboto">
+    <mxGraphModel dx="7360" dy="1920" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0" extFonts="Roboto^https://fonts.googleapis.com/css?family=Roboto">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -251,10 +251,10 @@
           <mxGeometry x="810" y="709" width="66.67" height="50" as="geometry" />
         </mxCell>
         <mxCell id="-8byVdPDyk2Qr70N4ybH-120" value="user activity" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;strokeColor=none;strokeWidth=4;fillColor=none;fontFamily=Roboto;fontSize=24;fontColor=#434B54;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="903.34" y="709" width="170" height="60" as="geometry" />
+          <mxGeometry x="890" y="704" width="133.34" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="-8byVdPDyk2Qr70N4ybH-121" value="desision" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;strokeColor=none;strokeWidth=4;fillColor=none;fontFamily=Roboto;fontSize=24;fontColor=#434B54;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="893.34" y="774" width="170" height="60" as="geometry" />
+        <mxCell id="-8byVdPDyk2Qr70N4ybH-121" value="decision&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;strokeColor=none;strokeWidth=4;fillColor=none;fontFamily=Roboto;fontSize=24;fontColor=#434B54;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="890" y="774" width="100" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-8byVdPDyk2Qr70N4ybH-126" value="New AR&lt;br&gt;session" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;strokeColor=none;strokeWidth=4;fillColor=none;fontFamily=Roboto;fontSize=24;fontColor=#434B54;labelBackgroundColor=#ffffff;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="353.5" y="1419" width="170" height="60" as="geometry" />
