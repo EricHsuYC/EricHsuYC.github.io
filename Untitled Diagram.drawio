@@ -1,6 +1,6 @@
-<mxfile host="www.draw.io" modified="2020-02-24T07:22:08.477Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36" etag="phy62UiFinIFQk7Bi3cZ" version="12.7.4" type="github">
+<mxfile host="www.draw.io" modified="2020-02-24T07:26:58.575Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36" etag="Qn4cTQ5NahovRvoVeFWM" version="12.7.4" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="5280" dy="835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0" extFonts="Roboto^https://fonts.googleapis.com/css?family=Roboto|Noto Sans TC^https://fonts.googleapis.com/css?family=Noto+Sans+TC">
+    <mxGraphModel dx="6766" dy="1717" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0" extFonts="Roboto^https://fonts.googleapis.com/css?family=Roboto|Noto Sans TC^https://fonts.googleapis.com/css?family=Noto+Sans+TC">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -8,7 +8,7 @@
           <mxGeometry x="2102" y="920" width="488" height="540" as="geometry" />
         </mxCell>
         <mxCell id="XhoQUx6-Qrpr4KMmtcDn-90" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=#ffffff;strokeColor=#F78A4A;strokeWidth=4;fillColor=none;fontFamily=Roboto;fontSize=24;fontColor=#434B54;arcSize=13;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="2750" y="1060" width="480" height="540" as="geometry" />
+          <mxGeometry x="2720" y="1060" width="480" height="540" as="geometry" />
         </mxCell>
         <mxCell id="NgQy3xJu-YdLFc7Skf8Q-109" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=#ffffff;strokeColor=#F78A4A;strokeWidth=4;fillColor=#F78A4A;fontFamily=Roboto;fontSize=24;fontColor=#434B54;arcSize=13;perimeterSpacing=10;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-2696" y="973" width="548" height="214" as="geometry" />
@@ -1068,42 +1068,42 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="XhoQUx6-Qrpr4KMmtcDn-48" value="模型檢視器 &amp;amp; BIM屬性檢視" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#96D2E7;strokeColor=none;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;fontFamily=Noto Sans TC;fontSize=24;fontColor=#434B54;FType=g;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="2823" y="804" width="334" height="60" as="geometry" />
+          <mxGeometry x="2793" y="804" width="334" height="60" as="geometry" />
         </mxCell>
         <mxCell id="XhoQUx6-Qrpr4KMmtcDn-67" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startFill=0;endArrow=block;endFill=1;strokeColor=#B3B3B3;strokeWidth=4;fontFamily=Roboto;fontColor=#FFFFFF;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="XhoQUx6-Qrpr4KMmtcDn-50" target="XhoQUx6-Qrpr4KMmtcDn-62">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="XhoQUx6-Qrpr4KMmtcDn-50" value="在3D畫面中選取模型參考點" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#96D2E7;strokeColor=none;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;fontFamily=Noto Sans TC;fontSize=24;fontColor=#434B54;FType=g;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="2823" y="943" width="334" height="63" as="geometry" />
+          <mxGeometry x="2793" y="943" width="334" height="63" as="geometry" />
         </mxCell>
         <mxCell id="XhoQUx6-Qrpr4KMmtcDn-69" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;startFill=0;endArrow=block;endFill=1;strokeColor=#B3B3B3;strokeWidth=4;fontFamily=Roboto;fontColor=#FFFFFF;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="XhoQUx6-Qrpr4KMmtcDn-52">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="2990" y="1372" as="targetPoint" />
+            <mxPoint x="2960" y="1372" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="XhoQUx6-Qrpr4KMmtcDn-52" value="選取實際環境參考點" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#96D2E7;strokeColor=none;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;fontFamily=Noto Sans TC;fontSize=24;fontColor=#434B54;FType=g;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="2856" y="1229" width="268" height="63" as="geometry" />
+          <mxGeometry x="2826" y="1229" width="268" height="63" as="geometry" />
         </mxCell>
         <mxCell id="XhoQUx6-Qrpr4KMmtcDn-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Roboto;strokeColor=#B3B3B3;strokeWidth=4;endFill=1;endArrow=block;startFill=0;startArrow=none;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="XhoQUx6-Qrpr4KMmtcDn-54" target="XhoQUx6-Qrpr4KMmtcDn-55">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="XhoQUx6-Qrpr4KMmtcDn-54" value="範圍內走動檢視BIM模型及屬性資料" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#96D2E7;strokeColor=none;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;fontFamily=Noto Sans TC;fontSize=24;fontColor=#434B54;FType=g;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="2774" y="1514" width="432" height="63" as="geometry" />
+          <mxGeometry x="2744" y="1514" width="432" height="63" as="geometry" />
         </mxCell>
         <mxCell id="XhoQUx6-Qrpr4KMmtcDn-55" value="重新校準或是前往下個地點" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#96D2E7;strokeColor=none;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;fontFamily=Noto Sans TC;fontSize=24;fontColor=#434B54;FType=g;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="2774" y="1650" width="432" height="63" as="geometry" />
+          <mxGeometry x="2744" y="1650" width="432" height="63" as="geometry" />
         </mxCell>
         <mxCell id="XhoQUx6-Qrpr4KMmtcDn-58" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startFill=0;endArrow=block;endFill=1;strokeColor=#B3B3B3;strokeWidth=4;fontFamily=Roboto;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="XhoQUx6-Qrpr4KMmtcDn-59" target="XhoQUx6-Qrpr4KMmtcDn-54">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="XhoQUx6-Qrpr4KMmtcDn-59" value="自動疊合BIM模型至實際環境" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fillColor=#F78A4A;strokeColor=none;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;fontFamily=Noto Sans TC;fontSize=24;fontColor=#FFFFFF;FType=g;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="2816" y="1369" width="348" height="63" as="geometry" />
+          <mxGeometry x="2786" y="1369" width="348" height="63" as="geometry" />
         </mxCell>
         <mxCell id="XhoQUx6-Qrpr4KMmtcDn-68" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;startFill=0;endArrow=block;endFill=1;strokeColor=#B3B3B3;strokeWidth=4;fontFamily=Roboto;fontColor=#FFFFFF;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="XhoQUx6-Qrpr4KMmtcDn-62" target="XhoQUx6-Qrpr4KMmtcDn-52">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="XhoQUx6-Qrpr4KMmtcDn-62" value="掃描環境建立識別點雲" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#96D2E7;strokeColor=none;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;fontFamily=Noto Sans TC;fontSize=24;fontColor=#434B54;FType=g;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="2823" y="1088" width="334" height="63" as="geometry" />
+          <mxGeometry x="2793" y="1088" width="334" height="63" as="geometry" />
         </mxCell>
         <mxCell id="XhoQUx6-Qrpr4KMmtcDn-75" value="" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;startFill=0;endArrow=block;endFill=1;strokeColor=#B3B3B3;strokeWidth=4;fontFamily=Roboto;fontColor=#FFFFFF;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="XhoQUx6-Qrpr4KMmtcDn-71" target="XhoQUx6-Qrpr4KMmtcDn-74">
           <mxGeometry relative="1" as="geometry" />
@@ -1155,7 +1155,7 @@
           <mxGeometry x="2156" y="890" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="XhoQUx6-Qrpr4KMmtcDn-91" value="&lt;font color=&quot;#ffffff&quot; face=&quot;Noto Sans TC&quot;&gt;&lt;span style=&quot;font-size: 24px&quot;&gt;AR功能&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F78A4A;fontFamily=Roboto;arcSize=0;strokeColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="2800" y="1030" width="130" height="30" as="geometry" />
+          <mxGeometry x="2770" y="1030" width="130" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
