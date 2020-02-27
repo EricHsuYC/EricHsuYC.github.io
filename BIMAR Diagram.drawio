@@ -1,6 +1,6 @@
-<mxfile host="www.draw.io" modified="2020-02-27T07:00:13.640Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36" etag="mQrG5HtXEB-qpKSVHEte" version="12.7.8" type="github">
+<mxfile host="www.draw.io" modified="2020-02-27T11:28:20.408Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36" etag="FRYAJOAkSPWfHEAi4fwV" version="12.7.8" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="5280" dy="1560" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0" extFonts="Roboto^https://fonts.googleapis.com/css?family=Roboto|Noto Sans TC^https://fonts.googleapis.com/css?family=Noto+Sans+TC">
+    <mxGraphModel dx="5696" dy="1792" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0" extFonts="Roboto^https://fonts.googleapis.com/css?family=Roboto|Noto Sans TC^https://fonts.googleapis.com/css?family=Noto+Sans+TC">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -1186,6 +1186,14 @@
         </mxCell>
         <mxCell id="17grrDO-NaKpknDpMZ_n-21" value="範圍內走動檢視BIM模型&lt;br&gt;及屬性資料" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#96D2E7;strokeColor=none;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;fontFamily=Noto Sans TC;fontSize=24;fontColor=#434B54;FType=g;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="1960.5" y="3190" width="309.5" height="83" as="geometry" />
+        </mxCell>
+        <mxCell id="rn2aeaGtwkFmBFdmRJez-53" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startFill=0;endArrow=block;endFill=1;strokeColor=#B3B3B3;strokeWidth=4;fontFamily=Roboto;fontColor=#FFFFFF;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="17grrDO-NaKpknDpMZ_n-22" target="17grrDO-NaKpknDpMZ_n-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2419" y="3388" />
+              <mxPoint x="2419" y="2681" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="17grrDO-NaKpknDpMZ_n-22" value="重新校準或是前往下個地點" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#96D2E7;strokeColor=none;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;fontFamily=Noto Sans TC;fontSize=24;fontColor=#434B54;FType=g;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="1925.25" y="3356" width="380" height="63" as="geometry" />
