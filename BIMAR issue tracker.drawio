@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-04-09T04:56:28.593Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" etag="dqDYlMy69gRA70VknDzJ" version="12.9.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-04-09T05:01:01.307Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" etag="2Jr6rwr_nuijXoMhtTUp" version="12.9.9" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="-1407" dy="4323" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0" extFonts="Roboto^https://fonts.googleapis.com/css?family=Roboto|Noto Sans TC^https://fonts.googleapis.com/css?family=Noto+Sans+TC">
+    <mxGraphModel dx="-899" dy="4607" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0" extFonts="Roboto^https://fonts.googleapis.com/css?family=Roboto|Noto Sans TC^https://fonts.googleapis.com/css?family=Noto+Sans+TC">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -1054,7 +1054,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="52RrJz6nJ2261xiWmIf1-146" value="&lt;span style=&quot;font-family: &amp;#34;roboto&amp;#34; ; font-size: 33px ; background-color: rgb(255 , 255 , 255)&quot;&gt;Click&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=46;" vertex="1" connectable="0" parent="52RrJz6nJ2261xiWmIf1-145">
+        <mxCell id="52RrJz6nJ2261xiWmIf1-146" value="&lt;span style=&quot;font-family: &amp;#34;roboto&amp;#34; ; font-size: 33px ; background-color: rgb(255 , 255 , 255)&quot;&gt;1.Click&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=46;" vertex="1" connectable="0" parent="52RrJz6nJ2261xiWmIf1-145">
           <mxGeometry x="-0.3942" y="-4" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -1100,7 +1100,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="52RrJz6nJ2261xiWmIf1-61" value="&lt;span style=&quot;font-family: &amp;#34;roboto&amp;#34; ; font-size: 33px ; background-color: rgb(255 , 255 , 255)&quot;&gt;Click&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=22;" vertex="1" connectable="0" parent="52RrJz6nJ2261xiWmIf1-60">
+        <mxCell id="52RrJz6nJ2261xiWmIf1-61" value="&lt;span style=&quot;font-family: &amp;#34;roboto&amp;#34; ; font-size: 33px ; background-color: rgb(255 , 255 , 255)&quot;&gt;3.Click&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=22;" vertex="1" connectable="0" parent="52RrJz6nJ2261xiWmIf1-60">
           <mxGeometry x="-0.0904" y="-4" relative="1" as="geometry">
             <mxPoint x="-67.42" as="offset" />
           </mxGeometry>
@@ -1212,7 +1212,7 @@
             <mxPoint x="5614.17" y="1968.67" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="52RrJz6nJ2261xiWmIf1-0" value="&lt;font face=&quot;Roboto&quot; style=&quot;font-size: 33px ; background-color: rgb(255 , 255 , 255)&quot;&gt;Click&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="DTH90GxnTWISh_qtQhHW-376">
+        <mxCell id="52RrJz6nJ2261xiWmIf1-0" value="&lt;font face=&quot;Roboto&quot; style=&quot;font-size: 33px ; background-color: rgb(255 , 255 , 255)&quot;&gt;2.Click&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="DTH90GxnTWISh_qtQhHW-376">
           <mxGeometry x="0.1076" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -1228,7 +1228,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="52RrJz6nJ2261xiWmIf1-54" value="&lt;span style=&quot;font-family: &amp;#34;roboto&amp;#34; ; font-size: 33px ; background-color: rgb(255 , 255 , 255)&quot;&gt;Click&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=22;" vertex="1" connectable="0" parent="52RrJz6nJ2261xiWmIf1-53">
+        <mxCell id="52RrJz6nJ2261xiWmIf1-54" value="&lt;span style=&quot;font-family: &amp;#34;roboto&amp;#34; ; font-size: 33px ; background-color: rgb(255 , 255 , 255)&quot;&gt;3.Click&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=22;" vertex="1" connectable="0" parent="52RrJz6nJ2261xiWmIf1-53">
           <mxGeometry x="-0.0299" y="2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -1247,7 +1247,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="52RrJz6nJ2261xiWmIf1-66" value="&lt;span style=&quot;font-family: &amp;#34;roboto&amp;#34; ; font-size: 33px ; background-color: rgb(255 , 255 , 255)&quot;&gt;Click&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=22;" vertex="1" connectable="0" parent="52RrJz6nJ2261xiWmIf1-65">
+        <mxCell id="52RrJz6nJ2261xiWmIf1-66" value="&lt;span style=&quot;font-family: &amp;#34;roboto&amp;#34; ; font-size: 33px ; background-color: rgb(255 , 255 , 255)&quot;&gt;5.Click&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=22;" vertex="1" connectable="0" parent="52RrJz6nJ2261xiWmIf1-65">
           <mxGeometry x="0.1129" y="6" relative="1" as="geometry">
             <mxPoint y="1" as="offset" />
           </mxGeometry>
@@ -1308,7 +1308,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="52RrJz6nJ2261xiWmIf1-63" value="&lt;span style=&quot;font-family: &amp;#34;roboto&amp;#34; ; font-size: 33px ; background-color: rgb(255 , 255 , 255)&quot;&gt;Click&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=22;" vertex="1" connectable="0" parent="52RrJz6nJ2261xiWmIf1-62">
+        <mxCell id="52RrJz6nJ2261xiWmIf1-63" value="&lt;span style=&quot;font-family: &amp;#34;roboto&amp;#34; ; font-size: 33px ; background-color: rgb(255 , 255 , 255)&quot;&gt;4.Click&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=22;" vertex="1" connectable="0" parent="52RrJz6nJ2261xiWmIf1-62">
           <mxGeometry x="0.0653" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -1499,15 +1499,6 @@
         <mxCell id="52RrJz6nJ2261xiWmIf1-141" value="UI Wireframe Flow" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=46;opacity=60;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="5284" y="505" width="485.33" height="131" as="geometry" />
         </mxCell>
-        <mxCell id="52RrJz6nJ2261xiWmIf1-142" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=93.5;entryPerimeter=0;endArrow=blockThin;endFill=1;endSize=26;fontSize=22;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="DTH90GxnTWISh_qtQhHW-302" target="DTH90GxnTWISh_qtQhHW-377">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="5545" y="1138" />
-              <mxPoint x="5818" y="1138" />
-              <mxPoint x="5818" y="1894" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="52RrJz6nJ2261xiWmIf1-150" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=blockThin;endFill=1;endSize=26;fontSize=22;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="52RrJz6nJ2261xiWmIf1-143" target="DTH90GxnTWISh_qtQhHW-347">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -1517,7 +1508,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="52RrJz6nJ2261xiWmIf1-151" value="&lt;span style=&quot;font-family: &amp;#34;roboto&amp;#34; ; font-size: 33px ; background-color: rgb(255 , 255 , 255)&quot;&gt;Click&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=46;" vertex="1" connectable="0" parent="52RrJz6nJ2261xiWmIf1-150">
+        <mxCell id="52RrJz6nJ2261xiWmIf1-151" value="&lt;span style=&quot;font-family: &amp;#34;roboto&amp;#34; ; font-size: 33px ; background-color: rgb(255 , 255 , 255)&quot;&gt;2.Click(if issue list is opened)&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=46;" vertex="1" connectable="0" parent="52RrJz6nJ2261xiWmIf1-150">
           <mxGeometry x="-0.5802" y="2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
