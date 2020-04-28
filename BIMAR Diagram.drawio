@@ -1,50 +1,23 @@
-<mxfile host="app.diagrams.net" modified="2020-04-28T04:31:19.728Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" etag="jSk3BS3OsmILlrSt-NtA" version="12.9.14" type="github">
+<mxfile host="app.diagrams.net" modified="2020-04-28T04:36:50.080Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" etag="J9YDDySgIIuPJ4wzt_v2" version="12.9.14" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="4873" dy="2476" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0" extFonts="Roboto^https://fonts.googleapis.com/css?family=Roboto|Noto Sans TC^https://fonts.googleapis.com/css?family=Noto+Sans+TC">
+    <mxGraphModel dx="5570" dy="2842" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0" extFonts="Roboto^https://fonts.googleapis.com/css?family=Roboto|Noto Sans TC^https://fonts.googleapis.com/css?family=Noto+Sans+TC">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
-        <mxCell id="ARVCicjajEC1p5ahFIg0-40" value="" style="group" vertex="1" connectable="0" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="3164" y="2992" width="1281" height="906" as="geometry" />
-        </mxCell>
-        <mxCell id="ARVCicjajEC1p5ahFIg0-31" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=#ffffff;strokeColor=#F78A4A;strokeWidth=4;fillColor=none;fontFamily=Roboto;fontSize=24;fontColor=#434B54;arcSize=5;" vertex="1" parent="ARVCicjajEC1p5ahFIg0-40">
-          <mxGeometry y="30" width="1281" height="876" as="geometry" />
-        </mxCell>
-        <mxCell id="ARVCicjajEC1p5ahFIg0-36" value="&lt;font color=&quot;#ffffff&quot; face=&quot;Noto Sans TC&quot;&gt;&lt;span style=&quot;font-size: 24px&quot;&gt;All views&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F78A4A;fontFamily=Roboto;arcSize=0;strokeColor=none;" vertex="1" parent="ARVCicjajEC1p5ahFIg0-40">
-          <mxGeometry x="101" width="130" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="ARVCicjajEC1p5ahFIg0-6" value="&lt;font color=&quot;#ffffff&quot; face=&quot;Noto Sans TC&quot;&gt;&lt;span style=&quot;font-size: 24px&quot;&gt;3D view&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F78A4A;fontFamily=Roboto;arcSize=0;strokeColor=none;" vertex="1" parent="ARVCicjajEC1p5ahFIg0-40">
-          <mxGeometry x="533" y="51" width="130" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="ARVCicjajEC1p5ahFIg0-27" value="" style="group" vertex="1" connectable="0" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="3935" y="3043" width="471.5" height="447.0100000000002" as="geometry" />
-        </mxCell>
-        <mxCell id="ARVCicjajEC1p5ahFIg0-2" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=#ffffff;strokeColor=#F78A4A;strokeWidth=4;fillColor=none;fontFamily=Roboto;fontSize=24;fontColor=#434B54;arcSize=13;" vertex="1" parent="ARVCicjajEC1p5ahFIg0-27">
-          <mxGeometry y="30" width="471.5" height="417.01" as="geometry" />
-        </mxCell>
-        <mxCell id="ARVCicjajEC1p5ahFIg0-3" value="&lt;font color=&quot;#ffffff&quot; face=&quot;Noto Sans TC&quot;&gt;&lt;span style=&quot;font-size: 24px&quot;&gt;AR&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F78A4A;fontFamily=Roboto;arcSize=0;strokeColor=none;" vertex="1" parent="ARVCicjajEC1p5ahFIg0-27">
-          <mxGeometry x="284" width="130" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="ARVCicjajEC1p5ahFIg0-25" value="" style="group" vertex="1" connectable="0" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="3208" y="3126" width="663" height="495.0100000000002" as="geometry" />
-        </mxCell>
-        <mxCell id="ARVCicjajEC1p5ahFIg0-5" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=#ffffff;strokeColor=#F78A4A;strokeWidth=4;fillColor=none;fontFamily=Roboto;fontSize=24;fontColor=#434B54;arcSize=13;" vertex="1" parent="ARVCicjajEC1p5ahFIg0-25">
-          <mxGeometry y="-53" width="663" height="227" as="geometry" />
-        </mxCell>
-        <mxCell id="ARVCicjajEC1p5ahFIg0-30" value="VR mode" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fillColor=#96D2E7;strokeColor=none;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;fontFamily=Roboto;fontSize=24;fontColor=#434B54;" vertex="1" parent="ARVCicjajEC1p5ahFIg0-25">
-          <mxGeometry x="55" y="75" width="192" height="60" as="geometry" />
+        <mxCell id="ARVCicjajEC1p5ahFIg0-31" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=#ffffff;strokeColor=#F78A4A;strokeWidth=4;fillColor=none;fontFamily=Roboto;fontSize=24;fontColor=#434B54;arcSize=5;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;connectable=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3164" y="3022" width="1281" height="876" as="geometry" />
         </mxCell>
         <mxCell id="ARVCicjajEC1p5ahFIg0-24" value="" style="group" vertex="1" connectable="0" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="3935" y="3513" width="471.5" height="870" as="geometry" />
         </mxCell>
-        <mxCell id="ARVCicjajEC1p5ahFIg0-7" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=#ffffff;strokeColor=#F78A4A;strokeWidth=4;fillColor=none;fontFamily=Roboto;fontSize=24;fontColor=#434B54;arcSize=13;" vertex="1" parent="ARVCicjajEC1p5ahFIg0-24">
+        <mxCell id="ARVCicjajEC1p5ahFIg0-7" value="&lt;span style=&quot;font-family: monospace ; font-size: 0px&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bspan%20style%3D%26quot%3Bfont-family%3A%20%26amp%3B%2334%3Bnoto%20sans%20tc%26amp%3B%2334%3B%20%3B%20font-size%3A%2024px%20%3B%20font-style%3A%20normal%20%3B%20font-weight%3A%20400%20%3B%20letter-spacing%3A%20normal%20%3B%20text-align%3A%20center%20%3B%20text-indent%3A%200px%20%3B%20text-transform%3A%20none%20%3B%20word-spacing%3A%200px%20%3B%20float%3A%20none%20%3B%20display%3A%20inline%26quot%3B%26gt%3BAR%20View%26lt%3B%2Fspan%26gt%3B%22%20style%3D%22text%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BfontFamily%3DRoboto%3BfontColor%3D%23F78A4A%3BfillColor%3D%23ffffff%3BverticalAlign%3Dmiddle%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%224254%22%20y%3D%223040%22%20width%3D%22107%22%20height%3D%2229%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=#ffffff;strokeColor=#F78A4A;strokeWidth=2;fillColor=none;fontFamily=Roboto;fontSize=24;fontColor=#434B54;arcSize=13;" vertex="1" parent="ARVCicjajEC1p5ahFIg0-24">
           <mxGeometry y="30" width="471.5" height="276" as="geometry" />
-        </mxCell>
-        <mxCell id="ARVCicjajEC1p5ahFIg0-8" value="&lt;font color=&quot;#ffffff&quot; face=&quot;Noto Sans TC&quot;&gt;&lt;span style=&quot;font-size: 24px&quot;&gt;VR&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F78A4A;fontFamily=Roboto;arcSize=0;strokeColor=none;" vertex="1" parent="ARVCicjajEC1p5ahFIg0-24">
-          <mxGeometry x="294" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="ARVCicjajEC1p5ahFIg0-33" value="3D view" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fillColor=#96D2E7;strokeColor=none;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;fontFamily=Roboto;fontSize=24;fontColor=#434B54;" vertex="1" parent="ARVCicjajEC1p5ahFIg0-24">
           <mxGeometry x="36" y="69" width="192" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ARVCicjajEC1p5ahFIg0-55" value="&lt;span style=&quot;font-family: &amp;#34;noto sans tc&amp;#34; ; font-size: 24px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; float: none ; display: inline&quot;&gt;VR View&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;fontFamily=Roboto;fontColor=#F78A4A;fillColor=#ffffff;verticalAlign=middle;" vertex="1" parent="ARVCicjajEC1p5ahFIg0-24">
+          <mxGeometry x="327" y="-1" width="107" height="29" as="geometry" />
         </mxCell>
         <mxCell id="udtXgVjFvpykzAhPoqrS-266" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=#ffffff;strokeColor=#F78A4A;strokeWidth=4;fillColor=none;fontFamily=Roboto;fontSize=24;fontColor=#434B54;arcSize=7;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="14400.67" y="1095.63" width="876" height="1247.37" as="geometry" />
@@ -2498,8 +2471,8 @@
         <mxCell id="ARVCicjajEC1p5ahFIg0-41" value="A/B/C..." style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fillColor=#96D2E7;strokeColor=none;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;fontFamily=Roboto;fontSize=24;fontColor=#434B54;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="3537" y="3673.99" width="121" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ARVCicjajEC1p5ahFIg0-1" value="&lt;span style=&quot;font-size: 36px&quot;&gt;UI Structure&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=24;fontFamily=Roboto;fontColor=#434B54;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="4042" y="2093.5" width="199" height="37" as="geometry" />
+        <mxCell id="ARVCicjajEC1p5ahFIg0-1" value="&lt;font style=&quot;font-size: 60px&quot;&gt;UI Structure&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=24;fontFamily=Roboto;fontColor=#434B54;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3188" y="2844" width="324" height="45" as="geometry" />
         </mxCell>
         <mxCell id="ARVCicjajEC1p5ahFIg0-9" value="Camera" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fillColor=#96D2E7;strokeColor=none;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;fontFamily=Roboto;fontSize=24;fontColor=#434B54;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="3265" y="3778" width="192" height="60" as="geometry" />
@@ -2564,6 +2537,33 @@
               <mxPoint x="3822" y="3681" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="ARVCicjajEC1p5ahFIg0-30" value="VR mode" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fillColor=#96D2E7;strokeColor=none;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;fontFamily=Roboto;fontSize=24;fontColor=#434B54;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3263" y="3201" width="192" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ARVCicjajEC1p5ahFIg0-52" value="" style="group" vertex="1" connectable="0" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3208" y="3042" width="663" height="258" as="geometry" />
+        </mxCell>
+        <mxCell id="ARVCicjajEC1p5ahFIg0-5" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=#ffffff;strokeColor=#F78A4A;strokeWidth=2;fillColor=none;fontFamily=Roboto;fontSize=24;fontColor=#434B54;arcSize=13;" vertex="1" parent="ARVCicjajEC1p5ahFIg0-52">
+          <mxGeometry y="31" width="663" height="227" as="geometry" />
+        </mxCell>
+        <mxCell id="ARVCicjajEC1p5ahFIg0-51" value="&lt;!--StartFragment--&gt;&lt;span style=&quot;font-family: &amp;quot;Noto Sans TC&amp;quot;; font-size: 24px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;3D view&lt;/span&gt;&lt;!--EndFragment--&gt;" style="text;whiteSpace=wrap;html=1;fontFamily=Roboto;fontColor=#F78A4A;fillColor=#ffffff;verticalAlign=middle;" vertex="1" parent="ARVCicjajEC1p5ahFIg0-52">
+          <mxGeometry x="520" width="107" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="ARVCicjajEC1p5ahFIg0-36" value="&lt;font color=&quot;#ffffff&quot; face=&quot;Noto Sans TC&quot;&gt;&lt;span style=&quot;font-size: 24px&quot;&gt;All views&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F78A4A;fontFamily=Roboto;arcSize=0;strokeColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3265" y="2992" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ARVCicjajEC1p5ahFIg0-54" value="" style="group" vertex="1" connectable="0" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3935" y="3040" width="471.5" height="450.0100000000002" as="geometry" />
+        </mxCell>
+        <mxCell id="ARVCicjajEC1p5ahFIg0-27" value="" style="group;fontSize=12;" vertex="1" connectable="0" parent="ARVCicjajEC1p5ahFIg0-54">
+          <mxGeometry y="3" width="471.5" height="447.0100000000002" as="geometry" />
+        </mxCell>
+        <mxCell id="ARVCicjajEC1p5ahFIg0-2" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=#ffffff;strokeColor=#F78A4A;strokeWidth=2;fillColor=none;fontFamily=Roboto;fontSize=24;fontColor=#434B54;arcSize=13;" vertex="1" parent="ARVCicjajEC1p5ahFIg0-27">
+          <mxGeometry y="30" width="471.5" height="417.01" as="geometry" />
+        </mxCell>
+        <mxCell id="ARVCicjajEC1p5ahFIg0-53" value="&lt;span style=&quot;font-family: &amp;#34;noto sans tc&amp;#34; ; font-size: 24px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; float: none ; display: inline&quot;&gt;AR View&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;fontFamily=Roboto;fontColor=#F78A4A;fillColor=#ffffff;verticalAlign=middle;" vertex="1" parent="ARVCicjajEC1p5ahFIg0-54">
+          <mxGeometry x="319" y="1" width="107" height="29" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
