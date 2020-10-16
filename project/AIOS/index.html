@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>THU A.I.O.S alpha</title>
+    <meta name="description" content="Hello, WebVR! ? A-Frame" />
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.4.1/d3.min.js"></script>
+    <script src="https://cdn.rawgit.com/morandd/aframe-heatmap3d/v1.0.4/aframe-heatmap3d.js"></script>
+    <!-- Optional: Only needed if you want to use StackBlur. This minified file is copied from https://github.com/flozz/StackBlur  -->
+    <script src="https://cdn.rawgit.com/flozz/StackBlur/1.4.0/dist/stackblur.min.js"></script>
+    <script src="https://unpkg.com/aframe-orbit-controls@1.3.0/dist/aframe-orbit-controls.min.js"></script>
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+
+
+    <link rel="stylesheet" href="/style.css" />
+
+    <script>
+      //fix loot-at with orbit-control
+      AFRAME.registerComponent("foo", {
+        tick: function() {
+          lookCube.setAttribute(
+            "position",
+            camera.getObject3D("camera").position
+          );
+        }
+      });
+    </script>
+
+    <script>
+      // Define a few custom components useful for AR mode. While these are somewhat reusable,
+      // I recommend checking if there are officially supported alternatives before copying
+      // these into new projects.
+
+      // See also https://github.com/aframevr/aframe/pull/4356
+      AFRAME.registerComponent("hide-in-ar-mode", {
+        // Set this object invisible while in AR mode.
+        init: function() {
+          this.el.sceneEl.addEventListener("enter-vr", ev => {
+            this.wasVisible = this.el.getAttribute("visible");
+            if (this.el.sceneEl.is("ar-mode")) {
+              this.el.setAttribute("visible", false);
+            }
+          });
+          this.el.sceneEl.addEventListener("exit-vr", ev => {
+            if (this.wasVisible) this.el.setAttribute("visible", true);
+          });
+        }
+      });
+    </script>
+
+    <!--     add iframe -->
+    <script>
+      function addScene() {
+        var scene = document.createElement("iframe");
+        scene.setAttribute("src", "ar.html");
+        scene.setAttribute("width", "300");
+        scene.setAttribute("height", "300");
+        document.querySelector("body").appendChild(scene);
+      }
+    </script>
+
+    <script>
+      const position = new THREE.Vector3();
+      var isAR = false;
+
+      function passPos(pos, rotat) {
+        if (isAR) {
+        } else {
+          document
+            .querySelector("#model")
+            .object3D.position.set(pos.x * 0.1, pos.y * 0.1, pos.z * 0.1);
+
+          // document
+          //   .querySelector("#model")
+          //   .object3D.rotation.set(
+          //     THREE.Math.degToRad(rotat.x),
+          //     THREE.Math.degToRad(rotat.y),
+          //     THREE.Math.degToRad(rotat.z)
+          //   );
+
+          document.querySelector("#model").object3D.quaternion.copy(rotat);
+
+          // document.querySelector("#model").object3D.rotation.x += Math.PI;
+
+          console.log("model repositioned!!");
+        }
+
+        // document.getElementById("model").setAttribute("position", pos);
+      }
+
+      //       var scene = document.querySelector("a-scene");
+
+      //       scene.addEventListener("enter-vr", console.log("enter-vr"));
+      //       scene.addEventListener("enter-ar", console.log("enter-ar"));
+      //       scene.addEventListener("loaded", console.log("loaded"));
+
+      AFRAME.registerComponent("listener", {
+        // Set this object invisible while in AR mode.
+        init: function() {
+          this.el.sceneEl.addEventListener("enter-vr", ev => {
+            if (this.el.sceneEl.is("ar-mode")) {
+              isAR = true;
+              console.log("enter AR");
+              document
+                .querySelector("#rig")
+                .object3D.position.set(5.1, 0, -6.3);
+              document
+                .querySelector("#rig")
+                .object3D.rotation.set(0, 180, 0);
+            } else {
+              console.log("enter VR");
+              document
+                .querySelector("#rig")
+                .object3D.position.set(5.1, 0, -6.3);
+              document
+                .querySelector("#rig")
+                .object3D.rotation.set(0, 180, 0);
+            }
+          });
+          this.el.sceneEl.addEventListener("exit-vr", ev => {
+            isAR = false;
+            console.log("exit AR");
+          });
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <a-scene
+      vr-mode-ui="enterVRButton: #myEnterVRButton; enterARButton: #myEnterARButton"
+      listener
+      foo
+    >
+      <a-assets>
+        <img
+          id="pngEU"
+          src="https://raw.githubusercontent.com/aerchit/THUAR/main/images/heat2.jpg"
+          style="display:none"
+        >
+        
+        
+        <img id="d28" src="https://raw.githubusercontent.com/aerchit/THUAR/main/images/28.png">
+        <img id="d30" src="https://raw.githubusercontent.com/aerchit/THUAR/main/images/30.png">
+        <img id="d32" src="https://raw.githubusercontent.com/aerchit/THUAR/main/images/32.png">
+        
+        <a-asset-item
+          id="room2"
+          src="https://raw.githubusercontent.com/aerchit/THUAR/main/models/AIoT_workshop_simplified.gltf"
+        ></a-asset-item>
+      </a-assets>
+
+<!--       scene contents below -->
+
+      
+      
+      
+
+      <a-entity id="lookCube" position="0 0 0" scale="1 1 1"></a-entity>
+      <a-sky hide-in-ar-mode color="#6e6e6e"></a-sky>
+
+      <!--       <a-entity
+        look-at="#lookCube"
+        position="2 2 2"
+        geometry="primitive: plane; width: 40; height: auto"
+        material="color: blue"
+        text="value: This text will be 40 units wide."
+      ></a-entity> -->
+
+      
+      
+<!--       <a-entity
+        look-at="#lookCube"
+        position="2 2 2"
+        geometry="primitive: plane; width: 1; height: 0.5"
+        material="color: #0000FF"
+        text="color: white; align: center; font: https://cdn.aframe.io/fonts/DejaVu-sdf.fnt;
+              value: Webduino Temperature Sensor no.001  123456789012345678"
+      >
+      </a-entity> -->
+
+      <a-entity id="model" rotation="0 -180 0" position="10 0 -10">
+        <a-entity
+          gltf-model="#room2"
+          scale="1 1 1"
+          rotation="0 0 0"
+          shadow
+        ></a-entity>
+
+        <a-entity
+          aframe-heatmap3d="
+		src: #pngEU;
+		srcMobile: #pngEU;
+		ignoreZeroValues:false; 
+    loadingAnimDur:5000;
+    unloadingAnimDur:2000;                  
+		stackBlurRadius:1;
+		palette:hot;
+		flipPalette:false;
+		renderMode: surface;
+		scaleOpacity: true;
+    particleSize:3;
+    invertElevation:true;
+		scaleOpacityMethod:log10;
+		opacityMin: 0; 
+		opacityMax: 1;
+		 width: 18.4; height: 7.9;"
+          scale="1 0.4 1"
+          position="5 0 -10"
+          rotation="0 -90 0"
+        >
+        </a-entity>
+        <a-image src="#d28" look-at="#lookCube" position="5.11 3.2 -17.5"  width="2" height="1"></a-image>
+       <a-image src="#d30" look-at="#lookCube" position="4 3.2 -3.5"  width="2" height="1"></a-image> 
+        <a-image src="#d32" look-at="#lookCube" position="7.8 3.2 -8.2"  width="2" height="1"></a-image> 
+      </a-entity>
+
+
+      <a-entity
+        light="
+      type: directional;
+      intensity: 0.8;
+      castShadow: true;
+      shadowMapHeight:2048;
+      shadowMapWidth:2048;
+      shadowCameraNear: -5;
+      shadowCameraRight: 25;
+      shadowCameraLeft: -25;
+      shadowCameraTop: 25;
+      shadowCameraBottom: -25;"
+        position="0.5 8 0"
+        shadow
+      >
+      </a-entity>
+
+      <a-light id="ambientLight" type="ambient" intensity="0.9"> </a-light>
+
+      <a-entity id="rig" position="0 0 0">
+        <a-entity
+          id="camera"
+          camera
+          wasd-controls="acceleration:200; fly:true"
+          orbit-controls="target: 5 0 2; minDistance: 0.5; maxDistance: 900; initialPosition: 0 5 0"
+        ></a-entity>
+      </a-entity>
+
+      <!--       <a-sky material="shader: gradient; topColor: 110 186 167; bottomColor: 178 235 220;"></a-sky> -->
+    </a-scene>
+    <div id="text">
+      <h1>A.I.O.S. alpha</h1>
+
+      <p>
+        Demo site:
+        <a href="#">THU AIoT Workshop</a>
+      </p>
+      <p>
+        Modes: <button id="myEnterARButton">AR</button>
+        <button onclick="addScene()" id="ARButton">AR Aim</button>
+        <button id="myEnterVRButton">VR</button>
+        <button id="btn_quarter">3D</button>
+      </p>
+
+<!--       <p>
+        This requires browser support for WebXR, for example an
+        <a href="https://developers.google.com/ar/discover/supported-devices"
+          >ARCore-compatible</a
+        >
+        Android phone with Chrome version 81 or higher. For ios users, it requires ARkit supported phone with Mozilla's WebXR Viewer.
+      </p> -->
+
+      <p>
+        Powered by
+        <a href="http://arch.thu.edu.tw/">THU ARCH</a>.
+      </p>
+    </div>
+    <!--     <iframe src="ar.html" width="300" height="300"></iframe> -->
+  </body>
+  <!--           <a id="myEnterVRButton" href="#">VRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR</a>
+    <a id="myEnterARButton" href="#">ARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR</a> -->
+</html>
