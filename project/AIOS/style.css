@@ -24,3 +24,19 @@ div#text {
   background-color: rgba(255, 255, 255, 0.7)
 }
 
+iframe{
+  position: fixed;
+  /* center the element */
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  /* margin-right: auto; */
+  /* margin-left: auto; */
+  /* give it dimensions */
+  /* height: 80vmin; */
+  /* width: 80vmin; */
+  height: 60%;
+  width: 60%;
+}

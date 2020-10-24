@@ -1,72 +1,97 @@
 <html>
-  <head>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-<!--         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script> -->
-    <script>
-      var campos = new THREE.Vector3();
-      var a = 1;
-      function add() {
-        a++;
-        document.getElementById("p1").innerHTML = a;
+
+<head>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <!--         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script> -->
+
+  <script>
+    var test = 123;
+    var Pos = new THREE.Vector3();
+    var rotat = new THREE.Quaternion();
+    var mx = new THREE.Matrix4();
+    // function updatePos() {
+    //   document.getElementById("p1").innerHTML =
+    //     Math.round(Pos.x * 10) / 10 + "/" + Math.round(Pos.y * 10) / 10 + "/" + Math.round(Pos.z * 10) / 10;
+    //   window.parent.passPos(Pos, rotat);
+
+
+    //   document.getElementById("p2").innerHTML = 
+    //   Math.round(rotat.x * 1000) / 1000 + "/" + Math.round(rotat.y * 1000) / 1000 + "/" + Math.round(rotat.z * 1000) / 1000;
+    //   window.parent.passPos(Pos, rotat);
+    // }
+
+    // set update interval
+
+
+    // setInterval(updatePos, 200);
+
+
+    AFRAME.registerComponent("mk-tracker", {
+      tick: (function () {
+        const position = new THREE.Vector3();
+        const rotation = new THREE.Quaternion();
+        const euler = new THREE.Euler();
+        const matrix = new THREE.Matrix4();
+        return function () {
+          // local
+          // var position = this.el.getAttribute('position');
+          // var rotation = this.el.getAttribute('rotation');
+          // console.log("Position: " + position.x + " " + position.y + " " + position.z);
+          // console.log("Rotation: " + rotation.x + " " + rotation.y + " " + rotation.z);
+
+          this.el.object3D.updateMatrixWorld();
+          position.setFromMatrixPosition(this.el.object3D.matrixWorld); // Vector3
+          rotation.setFromRotationMatrix(
+            matrix.extractRotation(this.el.object3D.matrixWorld)
+          );
+
+          // console.log(
+          //   "Position: " + position.x + " " + position.y + " " + position.z
+          // );
+          // console.log(
+          //   "Rotation: " + rotation.x + " " + rotation.y + " " + rotation.z
+          // );
+          // document.getElementById("p1").innerHTML =
+          //   "Position: " + position.x + " " + position.y + " " + position.z;
+          Pos = position;
+          rotat = rotation;
+          mx = matrix;
+
+          window.parent.passPos(Pos, rotat);
+
+          // window.parent.passPos(position);
+        };
+      })()
+    });
+
+
+
+
+    AFRAME.registerComponent('markerhandler', {
+      init: function () {
+        this.el.sceneEl.addEventListener('markerFound', () => {
+          console.log('markerFound');
+
+        });
+
+        this.el.sceneEl.addEventListener('markerLost', () => {
+          console.log('markerFound');
+
+
+        });
+
       }
-      function camPos() {
-        
-        // campos = document.getElementById("camera").object3D.getWorldPosition();
-        // window.parent.passPos(Pos,rotat);
-        // document.getElementById("p1").innerHTML = campos;
-      }
+    });
 
-      // setInterval(camPos, 1000);
-    </script>
-    <script>
-      var test = 123;
-      var Pos = new THREE.Vector3();
-      var rotat = new THREE.Quaternion();
-      var mx = new THREE.Matrix4();
-      function updatePos() {
-        document.getElementById("p1").innerHTML =
-          "Position: " + Pos.x + " " + Pos.y + " " + Pos.z;
-        window.parent.passPos(Pos,rotat);
-      }
-      setInterval(updatePos, 500);
-      AFRAME.registerComponent("track-camera", {
-        tick: (function() {
-          const position = new THREE.Vector3();
-          const rotation = new THREE.Quaternion();
-          const euler = new THREE.Euler();
-          const matrix = new THREE.Matrix4();
-          return function() {
-            // local
-            // var position = this.el.getAttribute('position');
-            // var rotation = this.el.getAttribute('rotation');
-            // console.log("Position: " + position.x + " " + position.y + " " + position.z);
-            // console.log("Rotation: " + rotation.x + " " + rotation.y + " " + rotation.z);
 
-            this.el.object3D.updateMatrixWorld();
-            position.setFromMatrixPosition(this.el.object3D.matrixWorld); // Vector3
-            rotation.setFromRotationMatrix(
-              matrix.extractRotation(this.el.object3D.matrixWorld)
-            );
 
-            // console.log(
-            //   "Position: " + position.x + " " + position.y + " " + position.z
-            // );
-            // console.log(
-            //   "Rotation: " + rotation.x + " " + rotation.y + " " + rotation.z
-            // );
-            // document.getElementById("p1").innerHTML =
-            //   "Position: " + position.x + " " + position.y + " " + position.z;
-            Pos = position;
-            rotat = rotation;
-            mx = matrix;
 
-            // window.parent.passPos(position);
-          };
-        })()
-      });
-    </script>
-    <!--     <script>
+
+
+
+  </script>
+  <!--     <script>
       AFRAME.registerComponent("track-camera", {
         tick: (function() {
           const position = new THREE.Vector3();
@@ -103,36 +128,38 @@
         })()
       });
     </script> -->
-  </head>
-  <body style="margin : 0px; overflow: hidden;">
-    <div style="margin: auto; text-align: center; z-index: 1;">
-      <!--       <p id="p0">CGGGGGGGGGGGGGGGGGGGGGGGGGG</p> -->
-      <p id="p1">Hello World!</p>
-    </div>
+</head>
 
-    <a-scene embedded arjs>
-      <a-marker preset="hiro" track-camera size="0.1">
-        <a-entity scale="1 1 1">
-          <a-box position="-1 0 0" rotation="0 45 0" color="#4CC3D9"></a-box>
-          <a-cylinder
-            position="1 0 0"
-            radius="0.5"
-            height="1.5"
-            color="#FFC65D"
-          ></a-cylinder>
-          <a-plane
-            position="0 0 0"
-            rotation="-90 0 0"
-            width="1"
-            height="1"
-            color="blue"
-          ></a-plane>
-        </a-entity>
-      </a-marker>
-      <a-box position="0 0 0" rotation="0 0 0" color="#4CC3D9"></a-box>
+<body style="margin : 0px; overflow: hidden;">
+  <!-- <div style="margin: auto; text-align: center; z-index: 1;">
+    <p id="p1" style="color:white">Hello World!</p>
+    <p id="p2" style="color:yellow">Hello World!</p>
+  </div> -->
 
-      <!--       <a-sky color="#ECECEC"></a-sky> -->
-      <a-entity camera></a-entity>
-    </a-scene>
-  </body>
+  <a-scene embedded arjs vr-mode-ui="enabled: false">
+    <a-assets>
+      <!-- <img id="hiro" src="https://raw.githubusercontent.com/aerchit/THUAR/main/images/hiro.png" /> -->
+      <img id="reticle" src="https://raw.githubusercontent.com/aerchit/THUAR/main/images/cyan_square_reticle.png" />
+    </a-assets>
+
+
+    <a-marker mk-tracker preset="hiro" size="0.1" smooth="true" smoothCount="10" smoothTolerance="0.02"
+      smoothThreshold="2">
+      <a-entity scale="1 1 1">
+        <a-image src="#reticle" position="0 0 0" rotation="-90 0 0" width="1" height="1"></a-image>
+
+        <!-- <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+        <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+        <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+        <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane> -->
+        <!-- <a-entity id="mkView1" geometry="primitive: cone; radiusBottom: 0.3; radiusTop: 0;height:1" rotation="0 0 0" position="0 0 0"></a-entity> -->
+      </a-entity>
+    </a-marker>
+    <!-- <a-box position="0 0 0" rotation="0 0 0" color="#4CC3D9"></a-box> -->
+
+    <!--       <a-sky color="#ECECEC"></a-sky> -->
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+
 </html>
