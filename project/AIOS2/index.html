@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>THU A.I.O.S alpha</title>
+  <meta name="description" content="THU A.I.O.S Alpha site" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.4.1/d3.min.js"></script>
+  <script src="https://cdn.rawgit.com/morandd/aframe-heatmap3d/v1.0.4/aframe-heatmap3d.js"></script>
+  <script src="https://cdn.rawgit.com/flozz/StackBlur/1.4.0/dist/stackblur.min.js"></script>
+  <script src="https://unpkg.com/aframe-orbit-controls@1.3.0/dist/aframe-orbit-controls.min.js"></script>
+  <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+
+
+  <!-- custom js -->
+
+  <script src="js/addScene.js"></script>
+  <script src="js/ar_listener.js"></script>
+  <script src="js/hide_in_ar.js"></script>
+  <script src="js/passPos.js"></script>
+  <script src="js/setRig.js"></script>
+  <script src="js/fix_orbit.js"></script>
+
+
+    <!-- icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+  <!-- css -->
+
+  <link rel="stylesheet" href="style.css" />
+
+
+
+</head>
+
+<body>
+  <!--     <iframe src="ar.html" width="300" height="300"></iframe> -->
+  <a-scene vr-mode-ui="enterVRButton: #myEnterVRButton; enterARButton: #myEnterARButton" listener fixorbit>
+    <a-assets>
+      <img id="pngEU" src="https://raw.githubusercontent.com/aerchit/THUAR/main/images/heat2.jpg"
+        style="display:none" />
+
+      <img id="d28" src="https://raw.githubusercontent.com/aerchit/THUAR/main/images/28.png" />
+      <img id="d30" src="https://raw.githubusercontent.com/aerchit/THUAR/main/images/30.png" />
+      <img id="d32" src="https://raw.githubusercontent.com/aerchit/THUAR/main/images/32.png" />
+      <img id="hiro" src="https://raw.githubusercontent.com/aerchit/THUAR/main/images/hiro.png" />
+      <img id="reticle" src="https://raw.githubusercontent.com/aerchit/THUAR/main/images/cyan_square_reticle.png" />
+
+
+      <a-asset-item id="room2"
+        src="https://raw.githubusercontent.com/aerchit/THUAR/main/models/AIoT_workshop_simplified.gltf"></a-asset-item>
+    </a-assets>
+
+    <!--       scene contents below -->
+
+    <a-entity id="lookCube" position="0 0 0" scale="1 1 1"></a-entity>
+
+    <a-sky hide-in-ar-mode color="#6e6e6e"></a-sky>
+
+
+
+    <a-entity id="model" rotation="0 -180 0" position="10 0 -10">
+
+      <a-image id="mk1" src="#hiro" position="7.75 1.2 -1.6" rotation="0 180 0" width="0.12" height="0.12">
+        <a-entity id="arViewpoint" position="0 0 0" scale="1 1 1"></a-entity>
+      </a-image>
+      <!-- <a-entity id="mkView1" geometry="primitive: cone; radiusBottom: 0.2; radiusTop: 0;height:0.3" rotation="90 0 0" position="0 1.2 0"></a-entity> -->
+
+      <a-entity hide-in-ar-mode gltf-model="#room2" scale="1 1 1" rotation="0 0 0" shadow></a-entity>
+
+      <a-entity aframe-heatmap3d="
+		src: #pngEU;
+		srcMobile: #pngEU;
+		ignoreZeroValues:false; 
+    loadingAnimDur:5000;
+    unloadingAnimDur:2000;                  
+		stackBlurRadius:1;
+		palette:hot;
+		flipPalette:false;
+		renderMode: surface;
+		scaleOpacity: true;
+    particleSize:5;
+    invertElevation:true;
+		scaleOpacityMethod:log10;
+		opacityMin: 0; 
+		opacityMax: 1;
+		 width: 18.4; height: 7.9;" scale="1 1 1" position="5 0 -10" rotation="0 -90 0">
+      </a-entity>
+      <a-image src="#d28" look-at="#lookCube" position="5.11 3.2 -17.5" width="2" height="1"></a-image>
+      <a-image src="#d30" look-at="#lookCube" position="4 3.2 -3.5" width="2" height="1"></a-image>
+      <a-image src="#d32" look-at="#lookCube" position="7.8 3.2 -8.2" width="2" height="1"></a-image>
+    </a-entity>
+
+    <a-entity light="
+      type: directional;
+      intensity: 0.8;
+      castShadow: true;
+      shadowMapHeight:2048;
+      shadowMapWidth:2048;
+      shadowCameraNear: -5;
+      shadowCameraRight: 25;
+      shadowCameraLeft: -25;
+      shadowCameraTop: 25;
+      shadowCameraBottom: -25;" position="0.5 8 0" shadow>
+    </a-entity>
+
+    <a-light id="ambientLight" type="ambient" intensity="0.9"> </a-light>
+
+    <a-entity id="rig" position="0 0 0">
+      <a-entity id="camera" camera wasd-controls="acceleration:200; fly:true"
+        orbit-controls="target: 5 0 2; minDistance: 0.5; maxDistance: 900; initialPosition: 0 5 0"></a-entity>
+    </a-entity>
+
+    <!--       <a-sky material="shader: gradient; topColor: 110 186 167; bottomColor: 178 235 220;"></a-sky> -->
+  </a-scene>
+  <div id="text">
+    <h1>A.I.O.S. alpha</h1>
+
+    <p>
+      Demo site:
+      <a href="#">THU AIoT Workshop</a>
+    </p>
+    <p>
+      Modes: <button id="myEnterARButton">AR</button>
+      <button onclick="addScene()" id="ARButton">AR Aim</button>
+      <button id="myEnterVRButton">VR</button>
+      <button id="btn_quarter">3D</button>
+    </p>
+
+    <!--       <p>
+        This requires browser support for WebXR, for example an
+        <a href="https://developers.google.com/ar/discover/supported-devices"
+          >ARCore-compatible</a
+        >
+        Android phone with Chrome version 81 or higher. For ios users, it requires ARkit supported phone with Mozilla's WebXR Viewer.
+      </p> -->
+
+    <p>
+      Powered by
+      <a href="http://arch.thu.edu.tw/">THU ARCH</a>.
+    </p>
+  </div>
+  <!--         <iframe src="ar.html" width="300" height="300"></iframe> -->
+</body>
+<!--           <a id="myEnterVRButton" href="#">VRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR</a>
+    <a id="myEnterARButton" href="#">ARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR</a> -->
+
+</html>
