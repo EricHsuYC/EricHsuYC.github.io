@@ -17,12 +17,13 @@
 
   <!-- custom js -->
 
-  <script src="js/addScene.js"></script>
-  <script src="js/ar_listener.js"></script>
-  <script src="js/hide_in_ar.js"></script>
-  <script src="js/passPos.js"></script>
-  <script src="js/setRig.js"></script>
-  <script src="js/fix_orbit.js"></script>
+  <script src="/js/addScene.js"></script>
+  <script src="/js/ar_listener.js"></script>
+  <script src="/js/hide_in_ar.js"></script>
+  <script src="/js/passPos.js"></script>
+  <script src="/js/setRig.js"></script>
+  <script src="/js/fix_orbit.js"></script>
+  <script src="/js/visibility.js"></script>
 
 
     <!-- icons -->
@@ -45,9 +46,12 @@
     <meta name="theme-color" content="#ffffff">
 
 
+
+
   <!-- css -->
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/style.css" />
+
 
 
 
@@ -57,7 +61,7 @@
   <!--     <iframe src="ar.html" width="300" height="300"></iframe> -->
   <a-scene vr-mode-ui="enterVRButton: #myEnterVRButton; enterARButton: #myEnterARButton" listener fixorbit>
     <a-assets>
-      <img id="pngEU" src="https://raw.githubusercontent.com/aerchit/THUAR/main/images/heat2.jpg"
+      <img id="pngEU" src="https://raw.githubusercontent.com/aerchit/THUAR/main/images/heat1102_2.jpg"
         style="display:none" />
 
       <img id="d28" src="https://raw.githubusercontent.com/aerchit/THUAR/main/images/28.png" />
@@ -86,7 +90,7 @@
       </a-image>
       <!-- <a-entity id="mkView1" geometry="primitive: cone; radiusBottom: 0.2; radiusTop: 0;height:0.3" rotation="90 0 0" position="0 1.2 0"></a-entity> -->
 
-      <a-entity gltf-model="#room2" scale="1 1 1" rotation="0 0 0" shadow></a-entity>
+      <a-entity id="room" gltf-model="#room2" scale="1 1 1" rotation="0 0 0" shadow></a-entity>
 
       <a-entity aframe-heatmap3d="
 		src: #pngEU;
@@ -94,17 +98,17 @@
 		ignoreZeroValues:false; 
     loadingAnimDur:5000;
     unloadingAnimDur:2000;                  
-		stackBlurRadius:1;
-		palette:hot;
-		flipPalette:false;
+		stackBlurRadius:3;
+		palette:RdYlBu;
+		flipPalette:true;
 		renderMode: surface;
 		scaleOpacity: true;
     particleSize:5;
     invertElevation:true;
 		scaleOpacityMethod:log10;
-		opacityMin: 0; 
+		opacityMin: 0.1; 
 		opacityMax: 1;
-		 width: 18.4; height: 7.9;" scale="1 1 1" position="5 0 -10" rotation="0 -90 0">
+		 width: 18.4; height: 7.9;" scale="1 0.7 1" position="5 0.1 -10" rotation="0 -90 0">
       </a-entity>
       <a-image src="#d28" look-at="#lookCube" position="5.11 3.2 -17.5" width="2" height="1"></a-image>
       <a-image src="#d30" look-at="#lookCube" position="4 3.2 -3.5" width="2" height="1"></a-image>
@@ -144,7 +148,7 @@
       Modes: <button id="myEnterARButton">AR</button>
       <button onclick="addScene()" id="ARButton">AR Aim</button>
       <button id="myEnterVRButton">VR</button>
-      <button id="btn_quarter">3D</button>
+      <button onclick="visibility()" id="btn_quarter">Vis</button>
     </p>
 
     <!--       <p>

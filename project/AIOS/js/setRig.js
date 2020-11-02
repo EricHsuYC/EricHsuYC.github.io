@@ -15,9 +15,11 @@ function setRig(pos, rotat) {
 
 
 
-    document
-    .querySelector("#arViewpoint")
-    .object3D.setRotationFromQuaternion(rotat);
+    // document
+    // .querySelector("#arViewpoint")
+    // .object3D.setRotationFromQuaternion(rotat);
+  
+  
   // console.log(abc.x + "/" + abc.y + "/" + abc.z);
 
 
